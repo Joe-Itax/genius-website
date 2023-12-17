@@ -11,6 +11,12 @@ node_modules
 dist
 dist-ssr
 *.local
+*.nix
+*.replit
+*.config
+.nix
+.replit
+.config
 
 # Editor directories and files
 .vscode/*
