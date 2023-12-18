@@ -116,3 +116,12 @@ footer {
     padding: 0 1rem;
   }
 }
+
+@media (max-width: 500px) {
+
+  header,
+  main,
+  footer {
+    padding: 0 .5rem;
+  }
+}

@@ -1,4 +1,12 @@
 /* ===========================@NavBar=========================== */
+.scroll-down header {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up header {
+  filter: drop-shadow(0 -10px 20px rgba(255, 255, 255, .1));
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -6,7 +14,8 @@ header {
   background-color: #191919;
   font-size: 1rem;
   width: 100%;
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 9999;
   transition: all .5s ease-in-out;
 }
@@ -110,7 +119,6 @@ header .menu-icon-box .menu-icon {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-
   }
 
   header nav ul {
@@ -134,14 +142,25 @@ header .menu-icon-box .menu-icon {
     display: none;
   }
 
-  header .cta-contact_us a {
-    /* padding: .5rem 1rem; */
-    padding: 0.3rem .7rem;
-  }
-
   header .menu-icon-box {
     display: block;
     padding: 2rem;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  header.show-menu nav {
+    top: 50%;
+  }
+
+  header .logo-box a {
+    padding: 1.5rem;
+    padding-left: 0;
+  }
+
+  header .menu-icon-box {
+    padding: 1.5rem;
     padding-right: 0;
   }
 }
