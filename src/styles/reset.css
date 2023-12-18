@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+  color: #E6E6E6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #191919;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  /* color: #E6E6E6; */
+}
+
+textarea:focus,
+input:focus,
+button:focus,
+select:focus {
+  outline: none;
+}
+
+a.active {
+  color: #fff;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  /* color: #fff; */
+
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 17.5px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 15px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 13px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 11px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h6 {
+  font-size: .8rem;
+  font-weight: 400;
+  line-height: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+  /* background-color: salmon; */
+}
+
+header,
+main {
+  border-bottom: 1px solid #262626;
+}
+
+header,
+main,
+footer {
+  padding: 0 4rem;
+
+}
+
+
+@media (max-width: 1050px) {
+
+  header,
+  main,
+  footer {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 960px) {
+
+  header,
+  main,
+  footer {
+    padding: 0 1rem;
+  }
+}

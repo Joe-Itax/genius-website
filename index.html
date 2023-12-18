@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Welcome to genius website</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <!-- My CSS -->
+  <link rel="stylesheet" href="./src/styles/reset.css" />
+  <link rel="stylesheet" href="./src/styles/index.css" />
+  <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- Animate css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+  <!-- Header with nav bar -->
+  <header>
+    <div class="logo-box">
+      <a href="index.html">
+        <i class="ri-at-line"></i>
+        <span>Genius</span>
+      </a>
+    </div>
+    <nav class="">
+      <ul>
+        <li class="a-active"><a href="#" class="active">Accueil</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="#">Nos Réalisations</a></li>
+        <li><a href="#">Process</a></li>
+        <li><a href="#">A Propos</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="cta-contact_us">
+      <a href="#">Nous Contacter</a>
+    </div>
+    <div class="menu-icon-box" style=" display: none;">
+      <i class="ri-menu-4-line menu-icon open"></i>
+      <i class="ri-menu-unfold-line menu-icon close" style=" display: none;"></i>
+    </div>
+  </header>
+
+
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">Hero Section</section>
+  </main>
+  <footer>Footer</footer>
+
+  <script src="./src/js/index.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,126 @@
+/* ===========================@NavBar=========================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #1F1F1F; */
+  font-size: 1rem;
+  position: relative;
+}
+
+header .logo-box a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  padding-left: 0;
+}
+
+header .logo-box a i {
+  font-size: 2rem;
+}
+
+header .logo-box a span {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  animation: fadeInLeft 1s;
+}
+
+header nav.show-menu {
+  display: flex;
+  animation: fadeInRight 1s;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li:hover:not(ul li.a-active) {
+  animation: pulse 1s infinite;
+}
+
+header nav ul li a {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: all .3s ease-in-out;
+}
+
+header nav ul li a.active {
+  background-color: #262626;
+}
+
+header .cta-contact_us a {
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  color: #FEFEFE;
+  background-color: #B97AE0;
+  transition: all .3s ease-in-out;
+}
+
+header .cta-contact_us a:hover {
+  background-color: transparent;
+  border-color: #B97AE0;
+}
+
+header .menu-icon-box .menu-icon {
+  font-size: 2rem;
+  padding: .8rem;
+  border-radius: 8px;
+  background-color: #262626;
+}
+
+
+@media (max-width: 960px) {
+  header .logo-box a i {
+    font-size: 1.8rem;
+  }
+
+  header .logo-box a span {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  header nav ul li a {
+    padding: 0.3rem .7rem;
+  }
+
+  header .cta-contact_us a {
+    /* padding: .5rem 1rem; */
+    padding: 0.3rem .7rem;
+  }
+}
+
+/* ===========================@Footer=========================== */
+
+
+/* ===========================@Page Accueil=========================== */
+
+
+
+
+/* ===========================@Page A Propos=========================== */
+
+
+
+
+
+/* ===========================@Page Realisations=========================== */
+
+
+
+
+/* ===========================@Page Nos Services=========================== */
+
+
+
+
+/* ===========================@Page Contact=========================== */
