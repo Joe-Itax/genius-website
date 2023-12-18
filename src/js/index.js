@@ -1,10 +1,15 @@
-// const hambourgerBtn = document.querySelector('.ri-menu-4-line');
-const hambourgerBtn = document.querySelector('.menu-icon');
-const hambourgerBtnCloser = document.querySelector('.ri-menu-unfold-line');
+const body = document.body;
 
-const ctaHeader = document.querySelector('.cta-contact_us');
-const nav = document.querySelector('nav');
+const showMenu = () => {
+  const hambourgerBtn = document.querySelector('.open-menu');
+  const header = document.querySelector('header');
 
-hambourgerBtn.addEventListener('click', () => {
-  nav.classList.toggle('show-menu');
-});
+  hambourgerBtn.addEventListener('click', () => {
+    header.classList.toggle('show-menu');
+
+    body.style.overflow = header.classList.contains('show-menu') ? 'hidden' : 'auto';
+  });
+}
+
+showMenu();
+
