@@ -47,7 +47,7 @@ header nav ul {
 }
 
 header nav ul li:hover:not(ul li.a-active) {
-  animation: pulse 1s infinite;
+  /* animation: pulse 1s infinite; */
 }
 
 header nav ul li a {
@@ -56,6 +56,10 @@ header nav ul li a {
   font-weight: 600;
   border: 1px solid transparent;
   transition: all .3s ease-in-out;
+}
+
+header nav ul li a:hover:not(ul li a.active) {
+  color: #B97AE0;
 }
 
 header nav ul li a.active {
@@ -138,6 +142,11 @@ header .menu-icon-box .menu-icon {
     font-size: 1.2rem;
   }
 
+  header nav ul li a.active {
+    color: #B97AE0;
+    background-color: transparent;
+  }
+
   header .cta-contact_us {
     display: none;
   }
@@ -166,7 +175,90 @@ header .menu-icon-box .menu-icon {
 }
 
 /* ===========================@Footer=========================== */
+footer {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
 
+footer .footer_first_part,
+footer .footer_second_part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+footer .footer_first_part .logo-box .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 2rem;
+  padding-left: 0;
+}
+
+footer .footer_first_part .logo-box .logo i {
+  font-size: 2rem;
+}
+
+footer .footer_first_part .logo-box .logo span {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+footer .footer_first_part nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer_first_part nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  padding: 0 1rem;
+}
+
+footer .footer_first_part nav ul li a {
+  font-weight: 500;
+  transition: all .3s ease-in-out;
+}
+
+footer .footer_first_part nav ul li a:hover {
+  color: #B97AE0;
+  ;
+}
+
+/* ######################################################################################################################################################################################################################################################################################################################################################################################################################## */
+footer .footer_second_part {
+  border-top: 1px solid #262626;
+}
+
+footer .footer_second_part .info_about_us-box {
+  display: flex;
+  justify-content: center;
+  gap: .8rem;
+  color: #FDFDFF;
+}
+
+footer .footer_second_part .info_about_us-box div,
+footer .footer_second_part .info_about_us-box a {
+  padding-top: .8rem;
+  padding-bottom: .8rem;
+  border-bottom: 1px solid #262626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+footer .footer_second_part .copyright-box span {
+  color: #98989A;
+}
 
 /* ===========================@Page Accueil=========================== */
 
