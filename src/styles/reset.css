@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Barlow', sans-serif;
+  font-size: 1.125rem;
   color: #E6E6E6;
 }
 
@@ -103,7 +104,7 @@ footer {
   header,
   main,
   footer {
-    padding: 0 2rem;
+    padding: 0 1.5rem;
   }
 }
 
