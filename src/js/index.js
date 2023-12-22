@@ -7,6 +7,8 @@ const showMenu = () => {
   hambourgerBtn.addEventListener('click', () => {
     header.classList.toggle('show-menu');
 
+    header.style.transform = header.classList.contains("show-menu") ? "none" : "";
+
     body.style.overflow = header.classList.contains('show-menu') ? 'hidden' : 'auto';
   });
 }
@@ -14,24 +16,19 @@ const showMenu = () => {
 showMenu();
 
 
-// onScrollUpdate();
 const onScrollUpdate = () => {
   let lastScroll = 0;
-  const scrollThreshold = 200; // 200px
+  const scrollThreshold = 300; // 300px
 
   window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
-    // Activer uniquement si le scroll dépasse 200px
+    // Activer uniquement si le scroll dépasse 300px
     if (currentScroll >= scrollThreshold) {
-      if (currentScroll <= 0) {
-        body.classList.remove('scroll-up');
-      } else if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
-        body.classList.remove("scroll-up");
+      if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
         body.classList.add("scroll-down");
       } else if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
         body.classList.remove("scroll-down");
-        body.classList.add("scroll-up");
       }
       lastScroll = currentScroll;
     }
