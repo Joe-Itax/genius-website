@@ -79,6 +79,7 @@ header .cta-contact_us a:hover {
 
 header .menu-icon-box {
   display: none;
+  z-index: 9999;
 }
 
 header .menu-icon-box .menu-icon {
@@ -90,16 +91,6 @@ header .menu-icon-box .menu-icon {
 
 
 @media (max-width: 1110px) {
-  /* header .logo-box a i {
-    font-size: 1.8rem;
-  }
-
-  header .logo-box a span {
-    font-weight: bold;
-    font-size: 1.3rem;
-  } */
-
-  /* header.show-menu */
   header.show-menu {
     height: 100vh;
     align-items: flex-start;
@@ -172,6 +163,12 @@ header .menu-icon-box .menu-icon {
   header .menu-icon-box {
     padding: 1.5rem;
     padding-right: 0;
+  }
+}
+
+@media (max-height: 500px) {
+  header.show-menu nav {
+    top: 50%;
   }
 }
 

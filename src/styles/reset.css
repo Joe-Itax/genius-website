@@ -99,12 +99,21 @@ footer {
 }
 
 
-@media (max-width: 1050px) {
+@media (min-width: 1110px) and (max-width: 1150px) {
 
   header,
   main,
   footer {
     padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 1050px) {
+
+  header,
+  main,
+  footer {
+    padding: 0 2rem;
   }
 }
 
