@@ -98,6 +98,14 @@ footer {
   padding: 0 4rem;
 }
 
+.btn {
+  padding: .5rem 1rem;
+  border-radius: .6rem;
+  border: 1px solid transparent;
+  font-weight: 600;
+  transition: all .3s ease-in-out;
+}
+
 
 @media (min-width: 1110px) and (max-width: 1150px) {
 

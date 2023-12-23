@@ -63,13 +63,8 @@ header nav ul li a.active {
 }
 
 header .cta-contact_us a {
-  padding: .5rem 1rem;
-  border-radius: 10px;
-  font-weight: 600;
-  border: 1px solid transparent;
   color: #FEFEFE;
   background-color: #B97AE0;
-  transition: all .3s ease-in-out;
 }
 
 header .cta-contact_us a:hover {
