@@ -99,15 +99,18 @@ footer {
 }
 
 .btn {
-  padding: .5rem 1rem;
-  border-radius: .6rem;
+  padding: .7rem 1.2rem;
+  border-radius: .5rem;
+  line-height: 27px;
   border: 1px solid transparent;
-  font-weight: 600;
+  font-size: 1.125rem;
+  font-weight: 500;
+  word-wrap: break-word;
   transition: all .3s ease-in-out;
 }
 
 
-@media (min-width: 1110px) and (max-width: 1150px) {
+@media (min-width: 1110px) and (max-width: 1170px) {
 
   header,
   main,

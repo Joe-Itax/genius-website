@@ -48,7 +48,8 @@ header nav ul li:hover:not(ul li.a-active) {
 
 header nav ul li a {
   padding: 0.5rem 1rem;
-  border-radius: 10px;
+  word-wrap: break-word;
+  border-radius: 8px;
   font-weight: 600;
   border: 1px solid transparent;
   transition: all .3s ease-in-out;
