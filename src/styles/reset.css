@@ -40,44 +40,44 @@ a.active {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
-  line-height: 20px;
+  line-height: auto;
   font-family: 'Roboto Condensed', sans-serif;
   /* color: #fff; */
 
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 3.2rem;
   font-weight: 600;
   line-height: 17.5px;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 2.7rem;
   font-weight: 500;
   line-height: 15px;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 13px;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 11px;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
 h6 {
-  font-size: .8rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 10px;
   font-family: 'Roboto Condensed', sans-serif;

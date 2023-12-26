@@ -286,7 +286,7 @@ footer .footer_second_part .copyright-box span {
 }
 
 
-@media (max-width: 985px) {
+@media (max-width: 1010px) {
 
   footer .footer_first_part,
   footer .footer_second_part {
@@ -333,7 +333,86 @@ footer .footer_second_part .copyright-box span {
 }
 
 /* ===========================@Page Accueil=========================== */
+.hero-section{
+  background: url('../assets/images/home-page/bg-hero-section.svg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
 
+.hero-section h1{
+  text-align: center;
+}
+
+.hero-section .for-startup_and_more{
+  border: 1px solid #292929;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  background: rgba(36, 36, 36, 0.20);
+  backdrop-filter: blur(12px);
+}
+
+.hero-section .for-startup_and_more p{
+  color: #98989A;
+  font-size: 1.375rem;
+  text-align: center;
+}
+
+.hero-section .for-startup_and_more p .detail{
+  color: #fff;
+  background-color: #262626;
+}
+
+.hero-section .cta_hero-section{
+  display: flex;
+  padding-top: 1rem;
+  gap: .8rem;
+}
+
+.hero-section .cta_hero-section div a {
+  border-color: #262626;
+  
+  backdrop-filter: blur(12px);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.hero-section .cta_hero-section div.realisation a{
+  border: 1px #333333 solid; 
+  background: rgba(36, 36, 36, 1);
+}
+.hero-section .cta_hero-section div.realisation a:hover{
+  background: #B97AE0;
+}
+
+.hero-section .cta_hero-section div.contact a{
+  background: #B97AE0;
+}
+.hero-section .cta_hero-section div.contact a:hover{
+  border: 1px #333333 solid;
+  background: rgba(36, 36, 36, 1);
+}
+
+@media (max-width: 950px){
+  .hero-section .for-startup_and_more p{
+    font-size: 1rem;
+  }
+
+  .hero-section .for-startup_and_more p .detail{
+    color: #98989A;
+    background-color: unset;
+    font-size: 1rem;
+    padding: 0;
+  }
+} 
+@media (max-width: 800px){
+  .hero-section h1{
+    font-size: 2rem;
+  }
+} 
 
 
 
