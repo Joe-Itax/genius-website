@@ -368,8 +368,10 @@ footer .footer_second_part .copyright-box span {
 
 .hero-section .cta_hero-section{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-top: 1rem;
-  gap: .8rem;
+  gap: 2.5rem;
 }
 
 .hero-section .cta_hero-section div a {
@@ -409,10 +411,23 @@ footer .footer_second_part .copyright-box span {
   }
 } 
 @media (max-width: 800px){
+  main{
+    padding: 0!important;
+  }
+  .hero-section{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .hero-section h1{
     font-size: 2rem;
   }
 } 
+@media (max-width: 600px){
+  .hero-section{
+    height: auto;
+    padding: 5rem 1rem;
+  }
+}
 
 
 
