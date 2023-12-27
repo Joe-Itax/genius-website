@@ -716,7 +716,7 @@ main .testimonies .content .container .container-testimonies {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 2rem;
+  padding: 3.5rem 2rem;
   gap: 2rem;
 }
 
@@ -731,10 +731,11 @@ main .testimonies .content .container .container-testimonies h3 {
 main .testimonies .content .container .container-testimonies .container-info-client {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  border-radius: .7rem;
-  border: 1px solid #292929;
-  padding: 1rem;
+  background: rgba(36, 36, 36, 0.20);
+  gap: .7rem;
+  border-radius: .5rem;
+  border: 1px solid #262626;
+  padding: 1.25rem;
   width: 100%;
 }
 
@@ -749,8 +750,6 @@ main .testimonies .content .container .container-testimonies .container-info-cli
 }
 
 main .testimonies .content .container .container-testimonies .container-info-client .image-client img {
-  width: 80%;
-  max-height: 80%;
   border-radius: 8px;
 }
 
