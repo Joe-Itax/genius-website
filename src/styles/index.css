@@ -364,6 +364,7 @@ footer .footer_second_part .copyright-box span {
 .hero-section .for-startup_and_more p .detail{
   color: #fff;
   background-color: #262626;
+  border: 1px solid #333;
 }
 
 .hero-section .cta_hero-section{
@@ -371,31 +372,30 @@ footer .footer_second_part .copyright-box span {
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 1rem;
-  gap: 2.5rem;
+  gap: 1.5rem;
 }
 
 .hero-section .cta_hero-section div a {
   border-color: #262626;
-  
-  backdrop-filter: blur(12px);
   font-weight: 500;
   font-size: 1.2rem;
 }
 
 .hero-section .cta_hero-section div.realisation a{
-  border: 1px #333333 solid; 
-  background: rgba(36, 36, 36, 1);
+  background: #B97AE0;
 }
 .hero-section .cta_hero-section div.realisation a:hover{
-  background: #B97AE0;
+  background: rgba(36, 36, 36, 1);
+  border: 1px #333333 solid; 
 }
 
 .hero-section .cta_hero-section div.contact a{
-  background: #B97AE0;
+  border: 1px #333333 solid; 
+  background: rgba(36, 36, 36, 1);
 }
 .hero-section .cta_hero-section div.contact a:hover{
   border: 1px #333333 solid;
-  background: rgba(36, 36, 36, 1);
+  background: #B97AE0;
 }
 
 @media (max-width: 950px){
@@ -406,20 +406,15 @@ footer .footer_second_part .copyright-box span {
   .hero-section .for-startup_and_more p .detail{
     color: #98989A;
     background-color: unset;
+    border: unset;
     font-size: 1rem;
     padding: 0;
   }
 } 
 @media (max-width: 800px){
-  main{
-    padding: 0!important;
-  }
   .hero-section{
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-  .hero-section h1{
-    font-size: 2rem;
   }
 } 
 @media (max-width: 600px){
@@ -427,9 +422,63 @@ footer .footer_second_part .copyright-box span {
     height: auto;
     padding: 5rem 1rem;
   }
+  .hero-section .cta_hero-section{
+    gap: 2.5rem;
+  }
+}
+
+main .our-services{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+main .our-services .heading{
+  background: url("../assets/images/home-page/bg-our-service.svg") no-repeat center center/cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+main .our-services .heading p{
+  text-align: center;
+  font-size: 1.1rem;
+}
+@media (max-width: 800px) {
+  .our-services .heading{
+    padding-left: .7rem;
+    padding-right: .7rem;
+  }
 }
 
 
+
+/* For all sections of index.html */
+@media (max-width: 800px) {
+
+  main {
+    padding: 0;
+  }
+
+  .our-services{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+
+  /* header,
+  main,
+  footer {
+    padding: 0 .5rem;
+  } */
+}
 
 /* ===========================@Page A Propos=========================== */
 
