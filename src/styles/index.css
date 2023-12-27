@@ -333,7 +333,16 @@ footer .footer_second_part .copyright-box span {
 }
 
 /* ===========================@Page Accueil=========================== */
-.hero-section{
+
+/* For all sections of index.html except hero section */
+.hero-section,
+.trust-on-us,
+.our-services {
+  border-left: 1px solid #292929;
+  border-right: 1px solid #292929;
+}
+
+.hero-section {
   background: url('../assets/images/home-page/bg-hero-section.svg') no-repeat center center/cover;
   height: 100vh;
   display: flex;
@@ -343,11 +352,11 @@ footer .footer_second_part .copyright-box span {
   gap: 2rem;
 }
 
-.hero-section h1{
+.hero-section h1 {
   text-align: center;
 }
 
-.hero-section .for-startup_and_more{
+.hero-section .for-startup_and_more {
   border: 1px solid #292929;
   border-radius: 12px;
   padding: 1rem 2rem;
@@ -355,19 +364,19 @@ footer .footer_second_part .copyright-box span {
   backdrop-filter: blur(12px);
 }
 
-.hero-section .for-startup_and_more p{
+.hero-section .for-startup_and_more p {
   color: #98989A;
   font-size: 1.375rem;
   text-align: center;
 }
 
-.hero-section .for-startup_and_more p .detail{
+.hero-section .for-startup_and_more p .detail {
   color: #fff;
   background-color: #262626;
   border: 1px solid #333;
 }
 
-.hero-section .cta_hero-section{
+.hero-section .cta_hero-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -381,60 +390,65 @@ footer .footer_second_part .copyright-box span {
   font-size: 1.2rem;
 }
 
-.hero-section .cta_hero-section div.realisation a{
+.hero-section .cta_hero-section div.realisation a {
   background: #B97AE0;
 }
-.hero-section .cta_hero-section div.realisation a:hover{
+
+.hero-section .cta_hero-section div.realisation a:hover {
   background: rgba(36, 36, 36, 1);
-  border: 1px #333333 solid; 
+  border: 1px #333333 solid;
 }
 
-.hero-section .cta_hero-section div.contact a{
-  border: 1px #333333 solid; 
+.hero-section .cta_hero-section div.contact a {
+  border: 1px #333333 solid;
   background: rgba(36, 36, 36, 1);
 }
-.hero-section .cta_hero-section div.contact a:hover{
+
+.hero-section .cta_hero-section div.contact a:hover {
   border: 1px #333333 solid;
   background: #B97AE0;
 }
 
-@media (max-width: 950px){
-  .hero-section .for-startup_and_more p{
+@media (max-width: 950px) {
+  .hero-section .for-startup_and_more p {
     font-size: 1rem;
   }
 
-  .hero-section .for-startup_and_more p .detail{
+  .hero-section .for-startup_and_more p .detail {
     color: #98989A;
     background-color: unset;
     border: unset;
     font-size: 1rem;
     padding: 0;
   }
-} 
-@media (max-width: 800px){
-  .hero-section{
+}
+
+@media (max-width: 800px) {
+  .hero-section {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-} 
-@media (max-width: 600px){
-  .hero-section{
+}
+
+@media (max-width: 600px) {
+  .hero-section {
     height: auto;
     padding: 5rem 1rem;
   }
-  .hero-section .cta_hero-section{
+
+  .hero-section .cta_hero-section {
     gap: 2.5rem;
   }
 }
 
-main .our-services{
+main .our-services {
   /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; */
 }
 
-main .our-services .heading{
+main .our-services .heading {
   background: url("../assets/images/home-page/bg-our-service.svg") no-repeat center center/cover;
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -442,30 +456,128 @@ main .our-services .heading{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
-main .our-services .heading p{
+main .our-services .heading p {
   text-align: center;
   font-size: 1.1rem;
 }
+
 @media (max-width: 800px) {
-  .our-services .heading{
+  .our-services .heading {
     padding-left: .7rem;
     padding-right: .7rem;
   }
 }
 
+main .our-services .content {
+  display: flex;
+  align-items: flex-start;
+}
+
+main .our-services .content .service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  padding: 2rem;
+  padding-bottom: 1rem;
+}
+
+main .our-services .content .service:not(:last-child) {
+  border-right: 1px solid #292929;
+}
+
+main .our-services .content .service .container-service {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+main .our-services .content .service .container-service .icon-and-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+main .our-services .content .service .container-service .service-icon {
+  background: linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0) 100%);
+  border: 1px #2E2E2E solid;
+  border-bottom: none;
+  border-radius: 8px;
+  padding: .8rem;
+}
+
+main .our-services .content .service .container-service .service-icon img {
+  width: 2.5rem;
+}
+
+main .our-services .content .service .container-service h3 {
+  font-size: 1.8rem;
+}
+
+main .our-services .content .service .container-service .paragraph p {
+  color: #E6E6E6;
+  font-size: 1.1rem;
+}
+
+main .our-services .content .service .button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+main .our-services .content .service .button a {
+  background: #262626;
+  border: 1px #262626 solid;
+  color: #FFFFFF;
+  transition: all .3s ease-in-out;
+  width: 100%;
+  text-align: center;
+}
+
+main .our-services .content .service .button a:hover {
+  border: 1px #B97AE0 solid;
+}
+
+@media (max-width: 900px) {
+  main .our-services .content .service {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  main .our-services .content {
+    flex-direction: column;
+  }
+
+  main .our-services .content .service:not(:last-child) {
+    border-right: unset;
+    border-bottom: 1px solid #292929;
+  }
+
+  main .our-services .content .service .container-service .icon-and-title {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+  }
+}
 
 
-/* For all sections of index.html */
+
+/* For all sections of index.html except hero section*/
 @media (max-width: 800px) {
 
   main {
     padding: 0;
   }
 
-  .our-services{
+  .our-services {
     margin-left: 1rem;
     margin-right: 1rem;
   }
