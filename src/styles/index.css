@@ -460,12 +460,15 @@ main .our-services .content .service .container-service .paragraph p,
 }
 
 .hero-section .cta_hero-section div.realisation a {
-  background: #B97AE0;
+  /* background: #B97AE0; */
+  background: #A21ADE;
+  /* color: #1E1A1A; */
 }
 
 .hero-section .cta_hero-section div.realisation a:hover {
   background: rgba(36, 36, 36, 1);
   border: 1px #333333 solid;
+  /* color: #E6E6E6; */
 }
 
 .hero-section .cta_hero-section div.contact a {
@@ -475,7 +478,8 @@ main .our-services .content .service .container-service .paragraph p,
 
 .hero-section .cta_hero-section div.contact a:hover {
   border: 1px #333333 solid;
-  background: #B97AE0;
+  background: #A21ADE;
+  /* color: #1E1A1A; */
 }
 
 @media (max-width: 950px) {

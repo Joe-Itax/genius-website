@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Genius : des solutions web et mobile innovantes et performantes, adaptées à vos besoins et à votre budget">
   <title>Home</title>
   <!-- My CSS -->
   <link rel="stylesheet" href="./src/styles/reset.css" />
@@ -45,7 +46,7 @@
   <!-- Main Content -->
   <main>
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section class="hero-section lazy" data-bg="lazy.jpg">
       <h1 class="hero-title">Ici, le Génie est au Service de vos Ambitions Numériques</h1>
       <div class="for-startup_and_more">
         <p>Pour <span class="detail btn">Startups</span>, <span class="detail btn">Dirigeants d'entreprise</span>, <span
@@ -63,12 +64,12 @@
     </section>
 
     <!-- Trust on Us Section -->
-    <section class="trust-on-us">
+    <section class="trust-on-us lazy" data-bg="lazy.jpg">
       Ils nous font confiance
     </section>
 
     <!-- Our Service Section -->
-    <section class="our-services">
+    <section class="our-services lazy" data-bg="lazy.jpg">
       <div class="heading">
         <h2>Nos Services</h2>
         <div>
@@ -81,7 +82,7 @@
           <div class="container-service">
             <div class="icon-and-title">
               <div class="service-icon">
-                <img src="./src/assets/icons/Union.svg" />
+                <img src="./src/assets/icons/Union.svg" alt="Icon" loading="lazy" width="40" height="40"/>
               </div>
               <h3>Design</h3>
             </div>
@@ -102,7 +103,7 @@
           <div class="container-service">
             <div class="icon-and-title">
               <div class="service-icon">
-                <img src="./src/assets/icons/Subtract.svg" />
+                <img src="./src/assets/icons/Subtract.svg" alt="Icon" loading="lazy" width="40" height="40"/>
               </div>
               <h3>Ingénierie</h3>
             </div>
@@ -123,7 +124,7 @@
           <div class="container-service">
             <div class="icon-and-title">
               <div class="service-icon">
-                <img src="./src/assets/icons/Union.svg" />
+                <img src="./src/assets/icons/Vector.svg" alt="Icon" loading="lazy" width="40" height="40"/>
               </div>
               <h3>Gestion de Projets</h3>
             </div>
@@ -144,7 +145,7 @@
     </section>
 
     <!-- Why Choose Us Section -->
-    <section class="why-us">
+    <section class="why-us lazy" data-bg="lazy.jpg">
       <div class="heading">
         <h2>Pourquoi Choisir Genius?</h2>
         <div>
@@ -289,7 +290,8 @@
     </div>
   </footer>
 
-  <script src="./src/js/index.js"></script>
+  <script src="./src/js/index.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.5/dist/lazyload.min.js"></script>
 </body>
 
 </html>
