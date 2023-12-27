@@ -334,13 +334,82 @@ footer .footer_second_part .copyright-box span {
 
 /* ===========================@Page Accueil=========================== */
 
-/* For all sections of index.html except hero section */
+/* Style générale pour toutes les sections */
 .hero-section,
 .trust-on-us,
-.our-services {
+.our-services,
+.why-us{
   border-left: 1px solid #292929;
   border-right: 1px solid #292929;
 }
+
+main .our-services .heading,
+main .why-us .heading{
+  padding: 7rem 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+main .our-services .heading h2,
+main .why-us .heading h2{
+  text-align: center
+}
+
+main .our-services .heading p,
+main .why-us .heading p{
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+main .our-services .content .service .container-service .paragraph p,
+.why-us .content .container .container-why .paragraph p{
+  color: #E6E6E6;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 900px){
+  main .our-services .heading,
+  main .why-us .heading{
+    padding: 7rem 5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  main {
+    padding: 0;
+  }
+
+  .our-services,
+  .why-us{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  ain .our-services .heading,
+  main .why-us .heading{
+    padding: 7rem 1rem;
+  }
+
+  .our-services .heading,
+  .why-us .heading{
+    padding-left: .7rem;
+    padding-right: .7rem;
+  }
+}
+
+@media (max-width: 500px) {
+
+  /* header,
+  main,
+  footer {
+    padding: 0 .5rem;
+  } */
+}
+
+/* Fin style générale pour toutes les sections */
 
 .hero-section {
   background: url('../assets/images/home-page/bg-hero-section.svg') no-repeat center center/cover;
@@ -448,27 +517,8 @@ main .our-services {
   align-items: center; */
 }
 
-main .our-services .heading {
+main .our-services .heading{
   background: url("../assets/images/home-page/bg-our-service.svg") no-repeat center center/cover;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-main .our-services .heading p {
-  text-align: center;
-  font-size: 1.1rem;
-}
-
-@media (max-width: 800px) {
-  .our-services .heading {
-    padding-left: .7rem;
-    padding-right: .7rem;
-  }
 }
 
 main .our-services .content {
@@ -516,14 +566,9 @@ main .our-services .content .service .container-service .service-icon img {
   width: 2.5rem;
 }
 
-main .our-services .content .service .container-service h3 {
+/* main .our-services .content .service .container-service h3 {
   font-size: 1.8rem;
-}
-
-main .our-services .content .service .container-service .paragraph p {
-  color: #E6E6E6;
-  font-size: 1.1rem;
-}
+} */
 
 main .our-services .content .service .button {
   display: inline-flex;
@@ -562,35 +607,85 @@ main .our-services .content .service .button a:hover {
   }
 
   main .our-services .content .service .container-service .icon-and-title {
-    display: flex;
     align-items: center;
     gap: 1.4rem;
+    flex-direction: row;
+  }
+}
+
+main .why-us .heading{
+  background: url("../assets/images/home-page/bg-why-us.svg") no-repeat center center/cover;
+}
+
+main .why-us .content .container {
+  display: flex;
+}
+
+main .why-us .content .container:not(:last-child) {
+  border-bottom: 1px solid #292929;
+}
+
+main .why-us .content .container .container-why{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+main .why-us .content .container .container-why:not(:last-child){
+  border-right: 1px solid #292929;
+}
+
+.why-us .content .container .container-why .icon-and-title{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.why-us .content .container .container-why .icon-and-title .service-icon {
+  background: linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0) 100%);
+  border: 1px #2E2E2E solid;
+  border-bottom: none;
+  border-radius: 8px;
+  padding: .8rem;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* width: 5rem;
+  height: 5rem; */
+}
+
+.why-us .content .container .container-why .icon-and-title .service-icon i {
+  width: 2.5rem;
+  font-size: 2.5rem;
+  color: #B97AE0;
+}
+
+@media (max-width: 900px) {
+  main .why-us .content .container .container-why{
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 800px){
+  main .why-us .content .container {
+    flex-direction: column;
+    border: unset;
+  }
+
+  main .why-us .content .container .container-why{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  main .why-us .content .container .container-why:not(:last-child){
+    border-right: unset;
+    border-bottom: 1px solid #292929;
   }
 }
 
 
-
-/* For all sections of index.html except hero section*/
-@media (max-width: 800px) {
-
-  main {
-    padding: 0;
-  }
-
-  .our-services {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-}
-
-@media (max-width: 500px) {
-
-  /* header,
-  main,
-  footer {
-    padding: 0 .5rem;
-  } */
-}
 
 /* ===========================@Page A Propos=========================== */
 
