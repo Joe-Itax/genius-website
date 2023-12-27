@@ -688,7 +688,348 @@ main .why-us .content .container .container-why:not(:last-child){
 
 
 /* ===========================@Page A Propos=========================== */
-
+main .about_us{
+  background:#B97AE0 url('./src/assets/images/about-page/bg-hero-section.svg');
+  background-size: cover;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding: 60px;
+}
+main .about_us .about_us_text{
+  text-align: center;
+}
+main .about_us .about_us_text h2{
+  margin-bottom: 20px;
+  color: #FEFEFE;
+  font-size: 25px;
+}
+main .about_us .about_us_text p{
+  color: #FEFEFE;
+  font-size: 18px;
+}
+main .about_genius{
+  box-shadow: 0px 0px 1px #98989A;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: end;
+}
+main .about_genius .about_genius_text_image{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:1.9rem;
+  margin-top: 40px;
+  margin: 40px 0px;
+}
+main .about_genius .about_genius_text_image .about_genius_text{
+  width: 50%;
+  text-align: justify;
+}
+main .about_genius .about_genius_text_image .about_genius_text h2{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  align-items: center;
+  font-size: 1.2rem;
+}
+main .about_genius .about_genius_text_image .about_genius_text p{
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+main .about_genius .about_genius_text_image .about_genius_image img{
+  width: 80%;
+}
+main .notre_histoire{
+  box-shadow: 0px 0px 1px #98989A;
+}
+main .notre_histoire h2{
+  box-shadow: 0px 0px 1px #98989A;
+  padding: 40px;
+  width: auto;
+}
+main .notre_histoire .histoire_details{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+}
+main .notre_histoire .histoire_details .design{
+  width: 100%;
+  box-shadow: 0px 0px 1px #98989A;
+  padding: 80px .5rem;
+}
+main .notre_histoire .histoire_details .design .design_01{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+main .notre_histoire .histoire_details .design .design_text{
+  text-align: justify;
+  margin-top: 20px;
+}
+main .notre_histoire .histoire_details .design .design_01 p{
+  font-size: 5rem;
+  font-weight: 900;
+  color: #B97AE0;
+}
+main .notre_histoire .histoire_details .design .design_01 span{
+  font-size: 20px;
+  font-weight: bold;
+  color: #B97AE0;
+  width: 80%;
+  box-shadow: 0 .5px #98989A;
+  padding: 20px 0;
+}
+main .notre_histoire .histoire_details .engineering{
+  width: 100%;
+  box-shadow: 0px 0px 1px #98989A;
+  padding: 80px .5rem;
+}
+main .notre_histoire .histoire_details .engineering .engineering_02{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+main .notre_histoire .histoire_details .engineering .engineering_text{
+  text-align: justify;
+  margin-top: 20px;
+}
+main .notre_histoire .histoire_details .engineering .engineering_02 p{
+  font-size: 5rem;
+  font-weight: 900;
+  color: #B97AE0;
+}
+main .notre_histoire .histoire_details .engineering .engineering_02 span{
+  font-size: 20px;
+  font-weight: bold;
+  color: #B97AE0;
+  box-shadow: 0 .5px #98989A;
+  padding: 20px 0;
+  width: 80%;
+}
+main .leader_des_produits {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  box-shadow: 0px 0px 1px #98989A;
+}
+main .leader_des_produits .leader_des_produits_image-text{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+main .leader_des_produits .leader_des_produits_image-text .image img{
+  width: 47%;
+  border-radius: 20px;
+}
+main .leader_des_produits .leader_des_produits_image-text .text{
+  text-align: justify;
+}
+main .leader_des_produits .leader_des_produits_image-text .text p{
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+main .leader_des_produits .leader_des_produits_image-text span{
+  color: #98989A;
+  text-align: left;
+}
+main .leader_des_produits .start_projects{
+  width: 100%;
+  padding: 10px;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px #98989A;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+main .leader_des_produits .start_projects p{
+  color: #98989A;
+  font-size: .8rem;
+}
+main .leader_des_produits .start_projects span{
+  background-color: #292929;
+  padding:15px 5px;
+  font-size: .8rem;
+  border-radius: 5px;
+  width: auto;
+}
+main .leader_des_produits .start_projects button{
+  padding:15px 5px;
+  font-size: .8rem;
+  border-radius: 5px;
+  background-color: #B97AE0;
+  color: #FEFEFE;
+  border: none;
+  width: auto;
+}
+@media only screen and (max-width:1135px){
+  main .leader_des_produits .start_projects span{
+    background-color: #292929;
+    padding:15px 5px;
+    font-size: .7rem;
+    border-radius: 5px;
+    width: auto;
+    }
+    main .leader_des_produits .start_projects button{
+    padding:15px 5px;
+    font-size: .7rem;
+    border-radius: 5px;
+    background-color: #B97AE0;
+    color: #FEFEFE;
+    border: none;
+    width: auto;
+    } 
+}
+@media only screen and (max-width:985px){
+  main .about_us{
+    padding: 50px;
+  }
+  main .about_us .about_us_text h2{
+    font-size: 1.4rem;
+  }
+  main .about_us .about_us_text p{
+    font-size: 18px;
+  }
+  main .about_genius{
+  box-shadow: 0px 0px 1px #98989A;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: end;
+  }
+  main .about_genius .about_genius_text_image{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:1.9rem;
+  margin-top: 40px;
+  margin: 20px 0;
+  }
+  main .about_genius .about_genius_text_image .about_genius_text{
+  width: 50%;
+  text-align: center;
+  }
+  main .about_genius .about_genius_text_image .about_genius_text h2{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  align-items: center;
+  }
+  main .about_genius .about_genius_text_image .about_genius_text p{
+  margin-bottom: 40px;
+  font-size: 15px;
+  }
+  main .about_genius .about_genius_text_image .about_genius_image img{
+  width: 90%;
+  }
+  main .leader_des_produits .leader_des_produits_image-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+  main .leader_des_produits .leader_des_produits_image-text .image img{
+  width: 50%;
+  }
+  main .leader_des_produits .leader_des_produits_image-text .text{
+  text-align: center;
+  }
+  main .leader_des_produits .leader_des_produits_image-text .text p{
+  margin-top: 20px;
+  }
+  main .leader_des_produits .leader_des_produits_image-text .text span{
+  font-size: 1rem;
+  }
+  main .leader_des_produits .start_projects{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px;
+  }
+  main .leader_des_produits .start_projects span{
+  background-color: #292929;
+  padding:15px 5px;
+  margin: 1.5rem 0;
+  font-size: .7rem;
+  border-radius: 5px;
+  width: 100%;
+  }
+  main .leader_des_produits .start_projects button{
+  padding:15px 5px;
+  font-size: .7rem;
+  border-radius: 5px;
+  background-color: #B97AE0;
+  color: #FEFEFE;
+  border: none;
+  width: 100%;
+  }
+}
+@media only screen and (max-width:855px){
+  main .about_genius .about_genius_text_image .about_genius_text{
+  width: 99%;
+  }
+  main .about_genius .about_genius_text_image .about_genius_text h2{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  align-items: center;
+  }
+  main .about_genius .about_genius_text_image .about_genius_text p{
+  margin-bottom: 40px;
+  font-size: 15px;
+  }
+  main .about_genius .about_genius_text_image .about_genius_image img{
+  width: 90%;
+  } 
+}
+@media only screen and (max-width:685px){
+  main .about_us{
+    padding: 40px;
+  }
+  main .about_genius .about_genius_text_image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+  }
+  main .about_genius .about_genius_text_image .about_genius_text{
+  width: 100%;
+  }
+  main .about_genius .about_genius_text_image .about_genius_text h2{
+  padding: 0;
+  margin-top: 0;
+  }
+  main .about_genius .about_genius_text_image .about_genius_text p{
+  font-size: 20px;
+  }
+  main .about_genius .about_genius_text_image .about_genius_image img{
+  width: 100%;
+  }
+  main .notre_histoire h2{
+  box-shadow: 0px 0px 1px #98989A;
+  padding: 25px;
+  font-size: 25px;
+  }
+  main .notre_histoire .histoire_details{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  }
+  main .notre_histoire .histoire_details .design .design_01 p{
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: #B97AE0;
+  }
+  main .notre_histoire .histoire_details .engineering .engineering_02 p{
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: #B97AE0;
+  }
+}
 
 
 
