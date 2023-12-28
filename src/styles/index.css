@@ -881,7 +881,7 @@ main .faq .content .faq-container .open-answer .question-content .answer{
 main .faq .contact-faq{
   display: flex;
   justify-content: center;
-  margin: 2rem;
+  /* margin: 2rem; */
 }
 
 main .faq .contact-faq a{
