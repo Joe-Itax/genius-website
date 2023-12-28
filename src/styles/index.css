@@ -790,8 +790,7 @@ main .testimonies .content .container .container-testimonies .container-info-cli
 
 /* ===========================@Page A Propos=========================== */
 main .about_us{
-  background:#B97AE0 url('./src/assets/images/about-page/bg-hero-section.svg');
-  background-size: cover;
+  background: #B97AE0 url("../assets/images/about-page/bg-hero-section.svg") no-repeat center center/cover;
   display:flex;
   justify-content:center;
   align-items:center;
