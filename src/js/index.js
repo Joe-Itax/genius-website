@@ -40,7 +40,7 @@ onScrollUpdate();
 
 const openAnswerFaq = () => {
  const questionsBox = document.querySelectorAll('.question-box');
-
+// d/
  questionsBox.forEach((question, index) => {
    question.addEventListener('click', () => {
      const faq = question.closest('.faq');
