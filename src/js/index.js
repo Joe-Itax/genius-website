@@ -38,3 +38,23 @@ const onScrollUpdate = () => {
 onScrollUpdate();
 
 
+const openAnswerFaq = () => {
+ const questionsBox = document.querySelectorAll('.question-box');
+
+ questionsBox.forEach((question, index) => {
+   question.addEventListener('click', () => {
+     const faq = question.closest('.faq');
+     const answer = faq.querySelector('.answer');
+
+     if (faq.classList.contains('open-answer')) {
+       faq.classList.remove('open-answer');
+     } else {
+       document.querySelectorAll('.faq').forEach((faq) => {
+         faq.classList.remove('open-answer');
+       });
+       faq.classList.add('open-answer');
+     }
+   });
+ });
+}
+openAnswerFaq();
