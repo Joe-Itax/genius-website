@@ -340,7 +340,8 @@ footer .footer_second_part .copyright-box span {
 .our-services,
 .why-us,
 .testimonies,
-.faq{
+.faq,
+.start_project{
   border-left: 1px solid #292929;
   border-right: 1px solid #292929;
 }
@@ -348,7 +349,8 @@ footer .footer_second_part .copyright-box span {
 main .our-services .heading,
 main .why-us .heading,
 main .testimonies .heading,
-main .faq .heading{
+main .faq .heading,
+main .start_project .heading{
   padding: 7rem 10rem;
   display: flex;
   flex-direction: column;
@@ -360,14 +362,16 @@ main .faq .heading{
 main .our-services .heading h2,
 main .why-us .heading h2,
 main .testimonies .heading h2,
-main .faq .heading h2{
+main .faq .heading h2,
+main .start_project .heading h2{
   text-align: center
 }
 
 main .our-services .heading p,
 main .why-us .heading p,
 main .testimonies .heading p,
-main .faq .heading p{
+main .faq .heading p,
+main .start_project .heading p{
   text-align: center;
   font-size: 1.1rem;
 }
@@ -383,7 +387,8 @@ main .our-services .content .service .container-service .paragraph p,
   main .our-services .heading,
   main .why-us .heading,
   main .testimonies .heading,
-  main .faq .heading{
+  main .faq .heading,
+  main .start_project .heading{
     padding: 7rem 5rem;
   }
 }
@@ -396,7 +401,8 @@ main .our-services .content .service .container-service .paragraph p,
   .our-services,
   .why-us,
   .testimonies,
-  .faq{
+  .faq,
+  .start_project{
     margin-left: 1rem;
     margin-right: 1rem;
   }
@@ -404,7 +410,8 @@ main .our-services .content .service .container-service .paragraph p,
   main .our-services .heading,
   main .why-us .heading,
   main .testimonies .heading,
-  main .faq .heading{
+  main .faq .heading,
+  main .start_project .heading{
     padding: 7rem .8rem;
   }
 }
@@ -928,6 +935,43 @@ main .faq .contact-faq a:hover{
     font-size: 1.3rem;
   } 
 }
+
+
+main .start_project .heading {
+  background: url("../assets/images/home-page/bg-contact.svg") no-repeat center center/cover;
+}
+
+main .start_project .heading .logo-box .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 2rem 0;
+}
+
+main .start_project .heading .logo-box .logo i {
+  font-size: 2rem;
+}
+
+main .start_project .heading .logo-box .logo span {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+main .start_project .heading .cta-start-project{
+  margin-top: 2rem;
+}
+
+main .start_project .heading .cta-start-project a{
+  background: #A21ADE;
+  transition: all .3s ease-in-out;
+}
+main .start_project .heading .cta-start-project a:hover{
+  background: transparent;
+  border-color: #A21ADE;
+}
+
+
 
 /* ===========================@Page A Propos=========================== */
 
