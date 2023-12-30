@@ -341,7 +341,7 @@ footer .footer_second_part .copyright-box span {
 .why-us,
 .testimonies,
 .faq,
-.start_project{
+.start_project {
   border-left: 1px solid #292929;
   border-right: 1px solid #292929;
 }
@@ -350,7 +350,7 @@ main .our-services .heading,
 main .why-us .heading,
 main .testimonies .heading,
 main .faq .heading,
-main .start_project .heading{
+main .start_project .heading {
   padding: 7rem 10rem;
   display: flex;
   flex-direction: column;
@@ -363,7 +363,7 @@ main .our-services .heading h2,
 main .why-us .heading h2,
 main .testimonies .heading h2,
 main .faq .heading h2,
-main .start_project .heading h2{
+main .start_project .heading h2 {
   text-align: center
 }
 
@@ -371,7 +371,7 @@ main .our-services .heading p,
 main .why-us .heading p,
 main .testimonies .heading p,
 main .faq .heading p,
-main .start_project .heading p{
+main .start_project .heading p {
   text-align: center;
   font-size: 1.1rem;
 }
@@ -388,7 +388,7 @@ main .our-services .content .service .container-service .paragraph p,
   main .why-us .heading,
   main .testimonies .heading,
   main .faq .heading,
-  main .start_project .heading{
+  main .start_project .heading {
     padding: 7rem 5rem;
   }
 }
@@ -402,7 +402,7 @@ main .our-services .content .service .container-service .paragraph p,
   .why-us,
   .testimonies,
   .faq,
-  .start_project{
+  .start_project {
     margin-left: 1rem;
     margin-right: 1rem;
   }
@@ -411,7 +411,7 @@ main .our-services .content .service .container-service .paragraph p,
   main .why-us .heading,
   main .testimonies .heading,
   main .faq .heading,
-  main .start_project .heading{
+  main .start_project .heading {
     padding: 7rem .8rem;
   }
 }
@@ -805,17 +805,17 @@ main .faq .content {
   grid-template-columns: repeat(2, 1fr);
 }
 
-main .faq .content .faq-container{
+main .faq .content .faq-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-main .faq .content .faq-container:not(:last-child){
+main .faq .content .faq-container:not(:last-child) {
   border-right: 1px solid #292929;
 }
 
-main .faq .content .faq-container .faq{
+main .faq .content .faq-container .faq {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -823,11 +823,11 @@ main .faq .content .faq-container .faq{
   padding: 3rem 2rem;
 }
 
-main .faq .content .faq-container .faq:not(:last-child){
+main .faq .content .faq-container .faq:not(:last-child) {
   border-bottom: 1px solid #292929;
 }
 
-main .faq .content .faq-container .faq .num-faq{
+main .faq .content .faq-container .faq .num-faq {
   background: linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0) 100%);
   border: 1px #2E2E2E solid;
   border-bottom: none;
@@ -835,89 +835,92 @@ main .faq .content .faq-container .faq .num-faq{
   padding: .8rem;
 }
 
-main .faq .content .faq-container .faq .num-faq span{
+main .faq .content .faq-container .faq .num-faq span {
   font-size: 2rem;
   font-weight: 500;
   transition: all .3s ease-in-out;
 }
 
-main .faq .content .faq-container .open-answer .num-faq span{
+main .faq .content .faq-container .open-answer .num-faq span {
   color: #BF99D7;
 }
 
-main .faq .content .faq-container .faq .question-content{
+main .faq .content .faq-container .faq .question-content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-main .faq .content .faq-container .faq .question-content .question-box{
+main .faq .content .faq-container .faq .question-content .question-box {
   display: flex;
   align-items: center;
   gap: 1rem;
   cursor: pointer;
 }
 
-main .faq .content .faq-container .faq .question-content .question-box .icon-open-answer{
+main .faq .content .faq-container .faq .question-content .question-box .icon-open-answer {
   transition: all .3s ease-in-out;
 }
 
-main .faq .content .faq-container .faq .question-content .question-box .icon-open-answer i{
+main .faq .content .faq-container .faq .question-content .question-box .icon-open-answer i {
   font-size: 2rem;
   transition: all .3s ease-in-out;
 }
 
-main .faq .content .faq-container .open-answer .question-content .question-box .icon-open-answer{
+main .faq .content .faq-container .open-answer .question-content .question-box .icon-open-answer {
   transform: rotate(45deg);
 }
 
-main .faq .content .faq-container .open-answer .question-content .question-box .icon-open-answer i{
+main .faq .content .faq-container .open-answer .question-content .question-box .icon-open-answer i {
   color: #BF99D7;
 }
 
-main .faq .content .faq-container .faq .question-content .answer{
+main .faq .content .faq-container .faq .question-content .answer {
   display: none;
   animation: fadeInDown;
   animation-duration: .5s;
 }
 
-main .faq .content .faq-container .open-answer .question-content .answer{
+main .faq .content .faq-container .open-answer .question-content .answer {
   display: block;
 }
 
-main .faq .contact-faq{
+main .faq .contact-faq {
   display: flex;
   justify-content: center;
   /* margin: 2rem; */
 }
 
-main .faq .contact-faq a{
-transition: all .3s ease-in-out;
+main .faq .contact-faq a {
+  transition: all .3s ease-in-out;
   background: #A21ADE;
 }
-main .faq .contact-faq a:hover{
+
+main .faq .contact-faq a:hover {
   background: transparent;
   border-color: #A21ADE;
 }
 
 @media (max-width: 925px) {
-  main .faq .content .faq-container .faq{
+  main .faq .content .faq-container .faq {
     gap: 1.5rem;
     padding: 2.5rem 1rem;
   }
 }
 
-@media (max-width: 800px){
-  main .faq .content{
+@media (max-width: 800px) {
+  main .faq .content {
     grid-template-columns: 1fr;
   }
+
   main .faq .content .faq-container {
     align-items: center;
-    border: unset!important;
+    border: unset !important;
   }
-  main .faq .content .faq-container .faq{
-    border: unset!important;
-    border-bottom: 1px solid #292929!important;
+
+  main .faq .content .faq-container .faq {
+    border: unset !important;
+    border-bottom: 1px solid #292929 !important;
     padding: 2rem 1rem !important;
     width: 100%;
     gap: 1rem;
@@ -925,15 +928,16 @@ main .faq .contact-faq a:hover{
   }
 }
 
-@media (max-width: 640px){
-  main .faq .content .faq-container .faq .num-faq span{
+@media (max-width: 640px) {
+  main .faq .content .faq-container .faq .num-faq span {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 450px){
-  main .faq .content .faq-container .faq .question-content .question-box h4{
+
+@media (max-width: 450px) {
+  main .faq .content .faq-container .faq .question-content .question-box h4 {
     font-size: 1.3rem;
-  } 
+  }
 }
 
 
@@ -958,43 +962,44 @@ main .start_project .heading .logo-box .logo span {
   font-size: 1.5rem;
 }
 
-main .start_project .heading .cta-start-project{
+main .start_project .heading .cta-start-project {
   margin-top: 2rem;
 }
 
-main .start_project .heading .cta-start-project a{
+main .start_project .heading .cta-start-project a {
   background: #A21ADE;
   transition: all .3s ease-in-out;
 }
-main .start_project .heading .cta-start-project a:hover{
+
+main .start_project .heading .cta-start-project a:hover {
   background: transparent;
   border-color: #A21ADE;
 }
 
-main .start_project .content{
+main .start_project .content {
   padding: 0 2rem;
-  border-top: 1px #262626 solid; 
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: center; 
-  display: flex;
-}
-
-main .start_project .content form{
-  width: 70%;
-  padding: 80px 2rem; 
-  border: 1px #262626 solid; 
-  flex-direction: column; 
+  border-top: 1px #262626 solid;
+  flex-direction: column;
   justify-content: center;
-  gap: 40px; 
+  align-items: center;
   display: flex;
 }
 
-main .start_project .content form .name_email-box{
-  
-  justify-content: space-between; 
-  align-items: flex-start; 
-  gap: 2rem; 
+main .start_project .content form {
+  width: 70%;
+  padding: 80px 2rem;
+  border: 1px #262626 solid;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  display: flex;
+}
+
+main .start_project .content form .name_email-box {
+
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
   display: inline-flex;
 }
 
@@ -1002,34 +1007,35 @@ main .start_project .content form .name_email-box .name-input,
 main .start_project .content form .name_email-box .email-input,
 main .start_project .content form .why_contacting_us,
 main .start_project .content form .ur_budget,
-main .start_project .content form .message{
+main .start_project .content form .message {
   flex: 1;
-  padding: 1.2rem 1rem; 
-  background: rgba(36, 36, 36, 0.50); 
-  border-radius: 8px; 
-  border: 1px #262626 solid; 
+  padding: 1.2rem 1rem;
+  background: rgba(36, 36, 36, 0.50);
+  border-radius: 8px;
+  border: 1px #262626 solid;
 }
 
 main .start_project .content form .name_email-box .name-input,
-main .start_project .content form .name_email-box .email-input{
-  flex-direction: column; 
-  justify-content: center; 
+main .start_project .content form .name_email-box .email-input {
+  flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
-  gap: 20px; 
+  gap: 20px;
   display: inline-flex;
 }
 
-form label{
-  color: #fff; font-size: 22px;  
-  font-weight: 500; 
-  line-height: 33px; 
+form label {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 33px;
   word-wrap: break-word;
 }
 
 form input[type="text"],
 form input[type="email"],
-form textarea{
-  color: #fff; 
+form textarea {
+  color: #fff;
   font-size: 22px;
   background: none;
   border: none;
@@ -1040,91 +1046,153 @@ form textarea{
   resize: vertical;
 }
 
-form .title:not(label.title){
-  font-size:1.5rem;
+form .title:not(label.title) {
+  font-size: 1.5rem;
   font-weight: 600;
   color: #fff;
   /* margin-bottom: 200rem; */
 }
 
 form input::placeholder,
-form textarea::placeholder{
-  color: #656567; 
-  font-size: 18px; 
-  font-weight: 400; 
-  line-height: 27px; 
+form textarea::placeholder {
+  color: #656567;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
   word-wrap: break-word;
 }
 
+form .why_contacting_us .why .devs,
+form .why_contacting_us .why .colab_or_other {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form .why_contacting_us .dev_web-input,
+form .why_contacting_us .dev_mob_and_desk,
+form .why_contacting_us .colab,
+form .why_contacting_us .other {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 form .why_contacting_us .why,
-form .ur_budget .min_max{
+form .ur_budget .min_max {
   display: flex;
   gap: 2rem;
   margin-top: 2rem;
 }
 
-form .submit{
-width: 100%;
+/* Style général des checkbox */
+input[type="checkbox"] {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  padding: 4px;
+  background: #262626;
+  border-radius: 4px;
+  border: 1px #333333 solid;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "\EB7B";
+  /* Code de l'icône check-line de remixicon */
+  font-family: "RemixIcon";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #B97AE0;
+}
+
+
+
+form .submit {
+  width: 100%;
   align-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-form input[type="submit"]{
+form input[type="submit"] {
   width: 50%;
   transition: all .3s ease-in-out;
   background: #A21ADE;
 }
 
-form input[type="submit"]:hover{
+form input[type="submit"]:hover {
   background: unset;
   border-color: #A21ADE;
 }
 
-@media (max-width: 1110px){
-  main .start_project .content form{
+@media (max-width: 1110px) {
+  main .start_project .content form {
     width: 80%;
   }
 }
 
-@media (max-width: 920px){
-  main .start_project .content form{
+@media (max-width: 920px) {
+  main .start_project .content form {
     width: 90%;
-    padding: 3rem 1rem; 
+    padding: 3rem 1rem;
   }
 }
 
-@media (max-width: 800px){
-  main .start_project .content form{
+@media (max-width: 800px) {
+  main .start_project .content form {
     width: 100%;
-    border: unset!important;
+    border: unset !important;
   }
+
   main .start_project .content form .name_email-box {
     flex-direction: column;
     width: 100%;
   }
-  main .start_project .content form .name_email-box *{
-  width: 100%;
+
+  main .start_project .content form .name_email-box * {
+    width: 100%;
   }
 
-  form .why_contacting_us .why, form .ur_budget .min_max {
-    flex-direction: column;
-    gap: 0!important;
+  /* form .why_contacting_us .why .devs, */
+  form .why_contacting_us .why .colab_or_other {
+    margin-top: 1rem;
   }
-  form input[type="checkbox"]{
+
+  form .why_contacting_us .why,
+  form .ur_budget .min_max {
+    flex-direction: column;
+    gap: 0 !important;
+  }
+
+  form input[type="checkbox"] {
     margin-right: 1rem;
   }
-  form input[type="submit"]{
+
+  form input[type="submit"] {
     width: 100%;
     transition: all .3s ease-in-out;
     background: #A21ADE;
   }
 }
 
-@media (max-width: 700px){
-  main .start_project .content{
+@media (max-width: 700px) {
+  main .start_project .content {
     padding: 0;
+  }
+}
+
+@media (max-width: 500px) {
+
+  form .why_contacting_us .dev_web-input,
+  form .why_contacting_us .dev_mob_and_desk,
+  form .why_contacting_us .colab,
+  form .why_contacting_us .other {
+    gap: 0.3rem;
   }
 }
 
