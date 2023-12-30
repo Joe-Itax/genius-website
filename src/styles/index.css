@@ -971,6 +971,115 @@ main .start_project .heading .cta-start-project a:hover{
   border-color: #A21ADE;
 }
 
+main .start_project .content{
+  padding: 0 2rem;
+  border-top: 1px #262626 solid; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  display: flex;
+}
+
+main .start_project .content form{
+  width: 70%;
+  padding: 80px 2rem; 
+  border: 1px #262626 solid; 
+  flex-direction: column; 
+  justify-content: center;
+  gap: 40px; 
+  display: flex;
+}
+
+main .start_project .content form .name_email-box{
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  gap: 2rem; 
+  display: inline-flex;
+}
+
+main .start_project .content form .name_email-box .name-input,
+main .start_project .content form .name_email-box .email-input{
+  padding: 1.2rem 1rem; 
+  background: rgba(36, 36, 36, 0.50); 
+  border-radius: 8px; 
+  border: 1px #262626 solid; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: flex-start;
+  gap: 20px; 
+  display: inline-flex;
+}
+
+form label{
+  color: #fff; font-size: 22px;  
+  font-weight: 500; 
+  line-height: 33px; 
+  word-wrap: break-word;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea{
+  color: #fff; 
+  font-size: 22px;
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-bottom: 1px solid #292929;
+  padding: .8rem .3rem;
+  resize: vertical;
+}
+
+form .title:not(label.title){
+  font-size:1.5rem;
+  font-weight: 600;
+  color: #fff;
+  /* margin-bottom: 200rem; */
+}
+
+form input::placeholder,
+form textarea::placeholder{
+  color: #656567; 
+  font-size: 18px; 
+  font-weight: 400; 
+  line-height: 27px; 
+  word-wrap: break-word;
+}
+
+form .why_contacting_us .why,
+form .ur_budget .min_max{
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+form .submit{
+width: 100%;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form input[type="submit"]{
+  width: 50%;
+  transition: all .3s ease-in-out;
+  background: #A21ADE;
+}
+
+form input[type="submit"]:hover{
+  background: unset;
+  border-color: #A21ADE;
+}
+
+@media (max-width: 1110px){
+  main .start_project .content form{
+    width: 80%;
+  }
+}
+
+@media (max-width: 920px)
 
 
 /* ===========================@Page A Propos=========================== */
