@@ -991,18 +991,27 @@ main .start_project .content form{
 }
 
 main .start_project .content form .name_email-box{
-  justify-content: flex-start; 
+  
+  justify-content: space-between; 
   align-items: flex-start; 
   gap: 2rem; 
   display: inline-flex;
 }
 
 main .start_project .content form .name_email-box .name-input,
-main .start_project .content form .name_email-box .email-input{
+main .start_project .content form .name_email-box .email-input,
+main .start_project .content form .why_contacting_us,
+main .start_project .content form .ur_budget,
+main .start_project .content form .message{
+  flex: 1;
   padding: 1.2rem 1rem; 
   background: rgba(36, 36, 36, 0.50); 
   border-radius: 8px; 
   border: 1px #262626 solid; 
+}
+
+main .start_project .content form .name_email-box .name-input,
+main .start_project .content form .name_email-box .email-input{
   flex-direction: column; 
   justify-content: center; 
   align-items: flex-start;
@@ -1079,7 +1088,45 @@ form input[type="submit"]:hover{
   }
 }
 
-@media (max-width: 920px)
+@media (max-width: 920px){
+  main .start_project .content form{
+    width: 90%;
+    padding: 3rem 1rem; 
+  }
+}
+
+@media (max-width: 800px){
+  main .start_project .content form{
+    width: 100%;
+    border: unset!important;
+  }
+  main .start_project .content form .name_email-box {
+    flex-direction: column;
+    width: 100%;
+  }
+  main .start_project .content form .name_email-box *{
+  width: 100%;
+  }
+
+  form .why_contacting_us .why, form .ur_budget .min_max {
+    flex-direction: column;
+    gap: 0!important;
+  }
+  form input[type="checkbox"]{
+    margin-right: 1rem;
+  }
+  form input[type="submit"]{
+    width: 100%;
+    transition: all .3s ease-in-out;
+    background: #A21ADE;
+  }
+}
+
+@media (max-width: 700px){
+  main .start_project .content{
+    padding: 0;
+  }
+}
 
 
 /* ===========================@Page A Propos=========================== */
