@@ -435,6 +435,7 @@ main .our-services .content .service .container-service .paragraph p,
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .hero-section h1 {
@@ -530,28 +531,21 @@ main .our-services .content .service .container-service .paragraph p,
   }
 }
 
-main .our-services {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-}
-
 main .our-services .heading {
   background: url("../assets/images/home-page/bg-our-service.svg") no-repeat center center/cover;
 }
 
 main .our-services .content {
-  display: flex;
+  display: grid;
   align-items: flex-start;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 main .our-services .content .service {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 4rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: end;
+  height: 35rem;
   padding: 2rem;
   padding-bottom: 1rem;
 }
@@ -561,6 +555,8 @@ main .our-services .content .service:not(:last-child) {
 }
 
 main .our-services .content .service .container-service {
+  justify-self: start;
+  align-self: start;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -586,10 +582,6 @@ main .our-services .content .service .container-service .service-icon img {
   width: 2.5rem;
 }
 
-/* main .our-services .content .service .container-service h3 {
-  font-size: 1.8rem;
-} */
-
 main .our-services .content .service .button {
   display: inline-flex;
   justify-content: center;
@@ -610,15 +602,32 @@ main .our-services .content .service .button a:hover {
   border: 1px #A21ADE solid;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1250px) {
+  main .our-services .content .service{
+    height: 35rem;
+  }
+}
+
+@media (max-width: 1110px) {
+  main .our-services .content .service{
+    height: 36.5rem;
+  }
+}
+
+@media (max-width: 950px) {
   main .our-services .content .service {
     padding: 1rem;
+    height: 38rem;
   }
 }
 
 @media (max-width: 800px) {
   main .our-services .content {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  main .our-services .content .service {
+    height: 20rem;
   }
 
   main .our-services .content .service:not(:last-child) {
@@ -630,6 +639,30 @@ main .our-services .content .service .button a:hover {
     align-items: center;
     gap: 1.4rem;
     flex-direction: row;
+  }
+}
+
+@media (max-width: 600px) {
+  main .our-services .content .service {
+    height: 23rem;
+  }
+}
+
+@media (max-width: 470px) {
+  main .our-services .content .service {
+    height: 25rem;
+  }
+}
+
+@media (max-width: 420px) {
+  main .our-services .content .service {
+    height: 28rem;
+  }
+}
+
+@media (max-width: 360px) {
+  main .our-services .content .service {
+    height: 30rem;
   }
 }
 
@@ -670,11 +703,6 @@ main .why-us .content .container .container-why:not(:last-child) {
   border-bottom: none;
   border-radius: 8px;
   padding: .8rem;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  /* width: 5rem;
-  height: 5rem; */
 }
 
 .why-us .content .container .container-why .icon-and-title .service-icon i {
@@ -888,7 +916,6 @@ main .faq .content .faq-container .open-answer .question-content .answer {
 main .faq .contact-faq {
   display: flex;
   justify-content: center;
-  /* margin: 2rem; */
 }
 
 main .faq .contact-faq a {
@@ -1050,7 +1077,6 @@ form .title:not(label.title) {
   font-size: 1.5rem;
   font-weight: 600;
   color: #fff;
-  /* margin-bottom: 200rem; */
 }
 
 form input::placeholder,
@@ -1100,7 +1126,7 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked::before {
   content: "\EB7B";
-  /* Code de l'icône check-line de remixicon */
+  /* Code Unicode de l'icône check-line de remixicon */
   font-family: "RemixIcon";
   position: absolute;
   top: 50%;
