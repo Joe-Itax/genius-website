@@ -745,12 +745,33 @@
             </div>
             <div class="message">
               <span class="title">Votre Message *</span>
-              <textarea name="message" placeholder="Saisissez ici" required></textarea>
+              <textarea
+                name="message"
+                placeholder="Saisissez ici"
+                required
+              ></textarea>
             </div>
             <div class="submit">
-              <input type="submit" value="Envoyer" class="btn" />
+              <input type="submit" value="Envoyer" class="btn" id="btnSubmit" />
             </div>
           </form>
+
+          <div class="form-send">
+            <div class="true">
+              <p>
+                Merci de nous avoir contacté ! <br />
+                Nous vous répondrons dans les plus brefs délais.
+              </p>
+              <i class="ri-emotion-happy-fill"></i>
+            </div>
+            <div class="false">
+              <p>
+                Une erreur s'est produite lors de l'envoi de votre formulaire,
+                veuillez ressayer s'il vous plaît.
+              </p>
+              <i class="ri-emotion-unhappy-fill"></i>
+            </div>
+          </div>
         </div>
       </section>
     </main>

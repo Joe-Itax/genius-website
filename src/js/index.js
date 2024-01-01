@@ -70,48 +70,15 @@ openAnswerFaq();
   emailjs.init("r1gYJ7V0toGvqNr3Z"); // Remplacez YOUR_USER_ID par votre identifiant EmailJS
 })();
 
-// Événement de soumission du formulaire
-// document
-//   .getElementById("contact_form")
-//   .addEventListener("submit", function (event) {
-//     event.preventDefault(); // Empêcher le comportement de soumission par défaut
-
-//     // Obtenez les données du formulaire
-//     let formData = {
-//       name: this.name.value,
-//       email: this.email.value,
-//       dev_web: this.dev_web.checked,
-//       dev_mob_and_desk: this.dev_mob_and_desk.checked,
-//       colab: this.colab.checked,
-//       other: this.other.checked,
-//       minValue: this.minValue.value,
-//       maxValue: this.maxValue.value,
-//       message: this.querySelector('textarea[name="message"]').value,
-//     };
-
-//     // Créer le corps de l'e-mail en utilisant toutes les données du formulaire
-//     let messageContent = `Nom : ${formData.name}\nEmail : ${formData.email}\nDéveloppement Web : ${formData.dev_web}\nDéveloppement App Mobile ou Desktop : ${formData.dev_mob_and_desk}\nCollaboration : ${formData.colab}\nAutres : ${formData.other}\nVotre fourchette budgétaire (Min) : ${formData.minValue}\nVotre fourchette budgétaire (Max) : ${formData.maxValue}\nMessage : ${formData.message}`;
-
-//     // Envoyez l'e-mail via EmailJS avec le corps de l'e-mail formaté
-//     // Envoyez l'e-mail via EmailJS
-//     emailjs
-//       .send("service_ra3cb5t", "template_6q6amlt", {
-//         message_html: messageContent,
-//       })
-//       .then(
-//         function (response) {
-//           console.log("E-mail envoyé avec succès !", response);
-//         },
-//         function (error) {
-//           console.log("Erreur lors de l'envoi de l'e-mail :", error);
-//         },
-//       );
-//   });
-
 document
   .getElementById("contact_form")
   .addEventListener("submit", function (event) {
     event.preventDefault(); // Empêcher le comportement de soumission par défaut
+
+    // Modifier le texte du bouton "Envoyer" en "En cours d'envoi"
+    let submitButton = this.querySelector('input[type="submit"]');
+    submitButton.value = "Envoi en cours...";
+    submitButton.disabled = true;
 
     // Obtenez les données du formulaire
     let formData = {
@@ -149,9 +116,20 @@ document
       .then(
         function (response) {
           console.log("E-mail envoyé avec succès !", response);
+          document.querySelector(".cta-start-project a").style.display = "none";
+          document.querySelector("form").style.display = "none";
+          document.querySelector(".form-send .true").style.display = "block";
+          document.querySelector(".form-send .false").style.display = "none";
         },
         function (error) {
           console.log("Erreur lors de l'envoi de l'e-mail :", error);
+          document.querySelector(".cta-start-project a").style.display =
+            "block";
+          document.querySelector("form").style.display = "block";
+          document.querySelector(".form-send .true").style.display = "none";
+          document.querySelector(".form-send .false").style.display = "block";
+          submitButton.value = "Envoyer";
+          submitButton.disabled = false;
         },
       );
   });

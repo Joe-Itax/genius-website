@@ -1126,8 +1126,6 @@ input[type="checkbox"]:checked::before {
   color: #B97AE0;
 }
 
-
-
 form .submit {
   width: 100%;
   align-self: center;
@@ -1145,6 +1143,54 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
   background: unset;
   border-color: #A21ADE;
+}
+
+form input[type="submit"]:disabled{
+  background: rgba(126, 26 ,222, .3);
+  cursor: not-allowed;
+}
+
+form input[type="submit"]:disabled:hover{
+  border-color: rgba(126, 26, 222, .3)!important;
+  border: 1px solid rgba(126, 26, 222, .3)!important;
+}
+
+main .start_project .content .form-send{
+  text-align: center;
+  padding: 3.5rem 2rem;
+}
+
+main .start_project .content .form-send .true,
+main .start_project .content .form-send .false{
+  padding: 2rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  display: none;
+}
+
+main .start_project .content .form-send .true{
+  background: #198754;
+}
+
+main .start_project .content .form-send .false{
+  background: #02CAF0;
+}
+
+main .start_project .content .form-send .true p{
+  color: #fff;
+}
+main .start_project .content .form-send .false p{
+  color: #000;
+}
+
+main .start_project .content .form-send .true i{
+  font-size: 2rem;
+  color: #ffc107;
+}
+
+main .start_project .content .form-send .false i{
+  font-size: 2rem;
+  color: #dc3545;
 }
 
 @media (max-width: 1110px) {
@@ -1192,8 +1238,10 @@ form input[type="submit"]:hover {
 
   form input[type="submit"] {
     width: 100%;
-    transition: all .3s ease-in-out;
-    background: #A21ADE;
+  }
+
+  main .start_project .content .form-send{
+    padding: 3rem 0;
   }
 }
 
