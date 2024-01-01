@@ -416,15 +416,6 @@ main .our-services .content .service .container-service .paragraph p,
   }
 }
 
-@media (max-width: 500px) {
-
-  /* header,
-  main,
-  footer {
-    padding: 0 .5rem;
-  } */
-}
-
 /* Fin style générale pour toutes les sections */
 
 .hero-section {
