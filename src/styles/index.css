@@ -877,6 +877,11 @@ main .faq .content .faq-container .faq .question-content .question-box {
   cursor: pointer;
 }
 
+main .faq .content .faq-container .faq .question-content .question-box .faq-title span{
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
 main .faq .content .faq-container .faq .question-content .question-box .icon-open-answer {
   transition: all .3s ease-in-out;
 }
@@ -947,13 +952,16 @@ main .faq .contact-faq a:hover {
 }
 
 @media (max-width: 640px) {
+  main .faq .content .faq-container .faq {
+    padding: 2rem .5rem !important;
+  }
   main .faq .content .faq-container .faq .num-faq span {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 450px) {
-  main .faq .content .faq-container .faq .question-content .question-box h4 {
+  main .faq .content .faq-container .faq .question-content .question-box .faq-title span{
     font-size: 1.3rem;
   }
 }
