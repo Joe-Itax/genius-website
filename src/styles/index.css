@@ -419,7 +419,7 @@ main .our-services .content .service .container-service .paragraph p,
 /* Fin style générale pour toutes les sections */
 
 .hero-section {
-  background: url('../assets/images/home-page/bg-hero-section.svg') no-repeat center center/cover;
+  background: url('../assets/images/home-page/bg-hero-section.webp') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -523,7 +523,7 @@ main .our-services .content .service .container-service .paragraph p,
 }
 
 main .our-services .heading {
-  background: url("../assets/images/home-page/bg-our-service.svg") no-repeat center center/cover;
+  background: url("../assets/images/home-page/bg-our-service.webp") no-repeat center center/cover;
 }
 
 main .our-services .content {
@@ -658,7 +658,7 @@ main .our-services .content .service .button a:hover {
 }
 
 main .why-us .heading {
-  background: url("../assets/images/home-page/bg-why-us.svg") no-repeat center center/cover;
+  background: url("../assets/images/home-page/bg-why-us.webp") no-repeat center center/cover;
 }
 
 main .why-us .content .container {
@@ -727,7 +727,7 @@ main .why-us .content .container .container-why:not(:last-child) {
 }
 
 main .testimonies .heading {
-  background: url("../assets/images/home-page/bg-testimonies.svg") no-repeat center center/cover;
+  background: url("../assets/images/home-page/bg-testimonies.webp") no-repeat center center/cover;
 }
 
 main .testimonies .content .container {
@@ -816,7 +816,7 @@ main .testimonies .content .container .container-testimonies .container-info-cli
 }
 
 main .faq .heading {
-  background: url("../assets/images/home-page/bg-faq.svg") no-repeat center center/cover;
+  background: url("../assets/images/home-page/bg-faq.webp") no-repeat center center/cover;
 }
 
 main .faq .content {
@@ -960,7 +960,7 @@ main .faq .contact-faq a:hover {
 
 
 main .start_project .heading {
-  background: url("../assets/images/home-page/bg-contact.svg") no-repeat center center/cover;
+  background: url("../assets/images/home-page/bg-contact.webp") no-repeat center center/cover;
 }
 
 main .start_project .heading .logo-box .logo {
