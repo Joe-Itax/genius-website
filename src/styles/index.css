@@ -419,7 +419,7 @@ main .our-services .content .service .container-service .paragraph p,
 /* Fin style générale pour toutes les sections */
 
 .hero-section {
-  background: url('../assets/images/home-page/bg-hero-section.webp') no-repeat center center/cover;
+  background: url('../assets/images/home-page/bg-hero-section.svg') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -594,13 +594,13 @@ main .our-services .content .service .button a:hover {
 }
 
 @media (max-width: 1250px) {
-  main .our-services .content .service{
+  main .our-services .content .service {
     height: 35rem;
   }
 }
 
 @media (max-width: 1110px) {
-  main .our-services .content .service{
+  main .our-services .content .service {
     height: 36.5rem;
   }
 }
@@ -877,7 +877,7 @@ main .faq .content .faq-container .faq .question-content .question-box {
   cursor: pointer;
 }
 
-main .faq .content .faq-container .faq .question-content .question-box .faq-title span{
+main .faq .content .faq-container .faq .question-content .question-box .faq-title span {
   font-size: 1.8rem;
   font-weight: 400;
 }
@@ -955,13 +955,14 @@ main .faq .contact-faq a:hover {
   main .faq .content .faq-container .faq {
     padding: 2rem .5rem !important;
   }
+
   main .faq .content .faq-container .faq .num-faq span {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 450px) {
-  main .faq .content .faq-container .faq .question-content .question-box .faq-title span{
+  main .faq .content .faq-container .faq .question-content .question-box .faq-title span {
     font-size: 1.3rem;
   }
 }
@@ -1153,50 +1154,51 @@ form input[type="submit"]:hover {
   border-color: #A21ADE;
 }
 
-form input[type="submit"]:disabled{
-  background: rgba(126, 26 ,222, .3);
+form input[type="submit"]:disabled {
+  background: rgba(126, 26, 222, .3);
   cursor: not-allowed;
 }
 
-form input[type="submit"]:disabled:hover{
-  border-color: rgba(126, 26, 222, .3)!important;
-  border: 1px solid rgba(126, 26, 222, .3)!important;
+form input[type="submit"]:disabled:hover {
+  border-color: rgba(126, 26, 222, .3) !important;
+  border: 1px solid rgba(126, 26, 222, .3) !important;
 }
 
-main .start_project .content .form-send{
+main .start_project .content .form-send {
   text-align: center;
   padding: 3.5rem 2rem;
 }
 
 main .start_project .content .form-send .true,
-main .start_project .content .form-send .false{
+main .start_project .content .form-send .false {
   padding: 2rem;
   border-radius: 5px;
   font-size: 1.2rem;
   display: none;
 }
 
-main .start_project .content .form-send .true{
+main .start_project .content .form-send .true {
   background: #198754;
 }
 
-main .start_project .content .form-send .false{
+main .start_project .content .form-send .false {
   background: #02CAF0;
 }
 
-main .start_project .content .form-send .true p{
+main .start_project .content .form-send .true p {
   color: #fff;
 }
-main .start_project .content .form-send .false p{
+
+main .start_project .content .form-send .false p {
   color: #000;
 }
 
-main .start_project .content .form-send .true i{
+main .start_project .content .form-send .true i {
   font-size: 2rem;
   color: #ffc107;
 }
 
-main .start_project .content .form-send .false i{
+main .start_project .content .form-send .false i {
   font-size: 2rem;
   color: #dc3545;
 }
@@ -1248,7 +1250,7 @@ main .start_project .content .form-send .false i{
     width: 100%;
   }
 
-  main .start_project .content .form-send{
+  main .start_project .content .form-send {
     padding: 3rem 0;
   }
 }
