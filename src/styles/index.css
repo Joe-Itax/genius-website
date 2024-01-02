@@ -65,11 +65,12 @@ header nav ul li a.active {
 
 header .cta-contact_us a {
   color: #FEFEFE;
-  background-color: #A21ADE;
+  border: 2px solid #fff;
+  background-color: transparent;
 }
 
 header .cta-contact_us a:hover {
-  background-color: transparent;
+  background-color: #A21ADE;
   border-color: #A21ADE;
 }
 
