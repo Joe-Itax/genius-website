@@ -948,6 +948,7 @@ main .about_us .about_us_text h2{
 main .about_us .about_us_text p{
   color: #FEFEFE;
   font-size: 1.2rem;
+  font-weight: 700;
 }
 main .about_genius{
   box-shadow: 0px 0px 1px #98989A;
@@ -1214,8 +1215,11 @@ main .leader_des_produits .start_projects button{
   }
 }
 @media only screen and (max-width:855px){
+   .aboutMain{
+    padding: 0 1rem;
+  } 
   main .about_genius .about_genius_text_image .about_genius_text{
-  width: 99%;
+  width: 90%;
   }
   main .about_genius .about_genius_text_image .about_genius_text h2{
   margin-top: 50px;
@@ -1250,6 +1254,7 @@ main .leader_des_produits .start_projects button{
   }
   main .about_genius .about_genius_text_image .about_genius_text p{
   font-size: 20px;
+  padding: 20px;
   }
   main .about_genius .about_genius_text_image .about_genius_image img{
   width: 100%;
@@ -1258,6 +1263,7 @@ main .leader_des_produits .start_projects button{
   box-shadow: 0px 0px 1px #98989A;
   padding: 25px;
   font-size: 25px;
+  text-align: center;
   }
   main .notre_histoire .histoire_details{
   display: grid;

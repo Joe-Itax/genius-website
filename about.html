@@ -43,7 +43,7 @@
   </header>
 
   <!-- Main Content -->
-  <main>
+  <main class="aboutMain">
     <!-- Your code here -->
    <section class="about_us">
       <div class="about_us_text">
@@ -61,7 +61,7 @@
               </p>
           </div>
           <div class="about_genius_image">
-            <img src="./src/assets/images/about-page/bg-logo.svg" alt="">
+            <img src="./src/assets/images/about-page/bg-logo.svg" alt="bg-logo" loading="eager">
           </div>
         </div>
     </section>
@@ -145,7 +145,7 @@
     <section class="leader_des_produits">
       <div class="leader_des_produits_image-text">
         <div class="image">
-          <img src="./src/assets/images/about-page/bg-logo.svg" alt="">
+          <img src="./src/assets/images/about-page/bg-logo.svg" alt="bg-logo" loading="eager">
         </div>
         <div class="text">
           <p>Aujourd'hui Genius continu de prospérer en tant qu'Agence Leader des produits</p><br>
@@ -163,6 +163,12 @@
           <button>Start a Project</button>
       </div>
     </section>
+    <script>
+      document.querySelector('.start_projects button')
+      .addEventListener('click',()=>{
+        location.href='#'
+      })
+    </script>
   </main>
   <!-- Footer -->
   <footer>
