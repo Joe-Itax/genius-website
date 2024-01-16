@@ -40,7 +40,6 @@ a.active {
 }
 
 h1, h2, h3, h4, h5, h6{
-  line-height: auto;
   font-family: 'Roboto Condensed', sans-serif;
   color: #fff;
 }
@@ -119,6 +118,7 @@ footer {
   font-size: 1.125rem;
   font-weight: 500;
   word-wrap: break-word;
+  cursor: pointer;
   transition: all .3s ease-in-out;
 }
 

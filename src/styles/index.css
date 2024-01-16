@@ -65,11 +65,12 @@ header nav ul li a.active {
 
 header .cta-contact_us a {
   color: #FEFEFE;
-  background-color: #A21ADE;
+  border: 2px solid #fff;
+  background-color: transparent;
 }
 
 header .cta-contact_us a:hover {
-  background-color: transparent;
+  background-color: #A21ADE;
   border-color: #A21ADE;
 }
 
@@ -340,7 +341,8 @@ footer .footer_second_part .copyright-box span {
 .our-services,
 .why-us,
 .testimonies,
-.faq{
+.faq,
+.start_project {
   border-left: 1px solid #292929;
   border-right: 1px solid #292929;
 }
@@ -348,7 +350,8 @@ footer .footer_second_part .copyright-box span {
 main .our-services .heading,
 main .why-us .heading,
 main .testimonies .heading,
-main .faq .heading{
+main .faq .heading,
+main .start_project .heading {
   padding: 7rem 10rem;
   display: flex;
   flex-direction: column;
@@ -360,14 +363,16 @@ main .faq .heading{
 main .our-services .heading h2,
 main .why-us .heading h2,
 main .testimonies .heading h2,
-main .faq .heading h2{
+main .faq .heading h2,
+main .start_project .heading h2 {
   text-align: center
 }
 
 main .our-services .heading p,
 main .why-us .heading p,
 main .testimonies .heading p,
-main .faq .heading p{
+main .faq .heading p,
+main .start_project .heading p {
   text-align: center;
   font-size: 1.1rem;
 }
@@ -383,7 +388,8 @@ main .our-services .content .service .container-service .paragraph p,
   main .our-services .heading,
   main .why-us .heading,
   main .testimonies .heading,
-  main .faq .heading{
+  main .faq .heading,
+  main .start_project .heading {
     padding: 7rem 5rem;
   }
 }
@@ -396,7 +402,8 @@ main .our-services .content .service .container-service .paragraph p,
   .our-services,
   .why-us,
   .testimonies,
-  .faq{
+  .faq,
+  .start_project {
     margin-left: 1rem;
     margin-right: 1rem;
   }
@@ -404,18 +411,10 @@ main .our-services .content .service .container-service .paragraph p,
   main .our-services .heading,
   main .why-us .heading,
   main .testimonies .heading,
-  main .faq .heading{
+  main .faq .heading,
+  main .start_project .heading {
     padding: 7rem .8rem;
   }
-}
-
-@media (max-width: 500px) {
-
-  /* header,
-  main,
-  footer {
-    padding: 0 .5rem;
-  } */
 }
 
 /* Fin style générale pour toutes les sections */
@@ -428,6 +427,7 @@ main .our-services .content .service .container-service .paragraph p,
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .hero-section h1 {
@@ -523,28 +523,21 @@ main .our-services .content .service .container-service .paragraph p,
   }
 }
 
-main .our-services {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-}
-
 main .our-services .heading {
-  background: url("../assets/images/home-page/bg-our-service.svg") no-repeat center center/cover;
+  background: url("../assets/images/home-page/bg-our-service.webp") no-repeat center center/cover;
 }
 
 main .our-services .content {
-  display: flex;
+  display: grid;
   align-items: flex-start;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 main .our-services .content .service {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 4rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: end;
+  height: 35rem;
   padding: 2rem;
   padding-bottom: 1rem;
 }
@@ -554,6 +547,8 @@ main .our-services .content .service:not(:last-child) {
 }
 
 main .our-services .content .service .container-service {
+  justify-self: start;
+  align-self: start;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -579,10 +574,6 @@ main .our-services .content .service .container-service .service-icon img {
   width: 2.5rem;
 }
 
-/* main .our-services .content .service .container-service h3 {
-  font-size: 1.8rem;
-} */
-
 main .our-services .content .service .button {
   display: inline-flex;
   justify-content: center;
@@ -603,15 +594,32 @@ main .our-services .content .service .button a:hover {
   border: 1px #A21ADE solid;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1250px) {
+  main .our-services .content .service {
+    height: 35rem;
+  }
+}
+
+@media (max-width: 1110px) {
+  main .our-services .content .service {
+    height: 36.5rem;
+  }
+}
+
+@media (max-width: 950px) {
   main .our-services .content .service {
     padding: 1rem;
+    height: 38rem;
   }
 }
 
 @media (max-width: 800px) {
   main .our-services .content {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  main .our-services .content .service {
+    height: 20rem;
   }
 
   main .our-services .content .service:not(:last-child) {
@@ -626,8 +634,32 @@ main .our-services .content .service .button a:hover {
   }
 }
 
+@media (max-width: 600px) {
+  main .our-services .content .service {
+    height: 23rem;
+  }
+}
+
+@media (max-width: 470px) {
+  main .our-services .content .service {
+    height: 25rem;
+  }
+}
+
+@media (max-width: 420px) {
+  main .our-services .content .service {
+    height: 28rem;
+  }
+}
+
+@media (max-width: 360px) {
+  main .our-services .content .service {
+    height: 30rem;
+  }
+}
+
 main .why-us .heading {
-  background: url("../assets/images/home-page/bg-why-us.svg") no-repeat center center/cover;
+  background: url("../assets/images/home-page/bg-why-us.webp") no-repeat center center/cover;
 }
 
 main .why-us .content .container {
@@ -663,11 +695,6 @@ main .why-us .content .container .container-why:not(:last-child) {
   border-bottom: none;
   border-radius: 8px;
   padding: .8rem;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  /* width: 5rem;
-  height: 5rem; */
 }
 
 .why-us .content .container .container-why .icon-and-title .service-icon i {
@@ -701,7 +728,7 @@ main .why-us .content .container .container-why:not(:last-child) {
 }
 
 main .testimonies .heading {
-  background: url("../assets/images/home-page/bg-testimonies.svg") no-repeat center center/cover;
+  background: url("../assets/images/home-page/bg-testimonies.webp") no-repeat center center/cover;
 }
 
 main .testimonies .content .container {
@@ -790,7 +817,7 @@ main .testimonies .content .container .container-testimonies .container-info-cli
 }
 
 main .faq .heading {
-  background: url("../assets/images/home-page/bg-faq.svg") no-repeat center center/cover;
+  background: url("../assets/images/home-page/bg-faq.webp") no-repeat center center/cover;
 }
 
 main .faq .content {
@@ -798,17 +825,17 @@ main .faq .content {
   grid-template-columns: repeat(2, 1fr);
 }
 
-main .faq .content .faq-container{
+main .faq .content .faq-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-main .faq .content .faq-container:not(:last-child){
+main .faq .content .faq-container:not(:last-child) {
   border-right: 1px solid #292929;
 }
 
-main .faq .content .faq-container .faq{
+main .faq .content .faq-container .faq {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -816,11 +843,11 @@ main .faq .content .faq-container .faq{
   padding: 3rem 2rem;
 }
 
-main .faq .content .faq-container .faq:not(:last-child){
+main .faq .content .faq-container .faq:not(:last-child) {
   border-bottom: 1px solid #292929;
 }
 
-main .faq .content .faq-container .faq .num-faq{
+main .faq .content .faq-container .faq .num-faq {
   background: linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0) 100%);
   border: 1px #2E2E2E solid;
   border-bottom: none;
@@ -828,89 +855,96 @@ main .faq .content .faq-container .faq .num-faq{
   padding: .8rem;
 }
 
-main .faq .content .faq-container .faq .num-faq span{
+main .faq .content .faq-container .faq .num-faq span {
   font-size: 2rem;
   font-weight: 500;
   transition: all .3s ease-in-out;
 }
 
-main .faq .content .faq-container .open-answer .num-faq span{
+main .faq .content .faq-container .open-answer .num-faq span {
   color: #BF99D7;
 }
 
-main .faq .content .faq-container .faq .question-content{
+main .faq .content .faq-container .faq .question-content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-main .faq .content .faq-container .faq .question-content .question-box{
+main .faq .content .faq-container .faq .question-content .question-box {
   display: flex;
   align-items: center;
   gap: 1rem;
   cursor: pointer;
 }
 
-main .faq .content .faq-container .faq .question-content .question-box .icon-open-answer{
+main .faq .content .faq-container .faq .question-content .question-box .faq-title span {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+main .faq .content .faq-container .faq .question-content .question-box .icon-open-answer {
   transition: all .3s ease-in-out;
 }
 
-main .faq .content .faq-container .faq .question-content .question-box .icon-open-answer i{
+main .faq .content .faq-container .faq .question-content .question-box .icon-open-answer i {
   font-size: 2rem;
   transition: all .3s ease-in-out;
 }
 
-main .faq .content .faq-container .open-answer .question-content .question-box .icon-open-answer{
+main .faq .content .faq-container .open-answer .question-content .question-box .icon-open-answer {
   transform: rotate(45deg);
 }
 
-main .faq .content .faq-container .open-answer .question-content .question-box .icon-open-answer i{
+main .faq .content .faq-container .open-answer .question-content .question-box .icon-open-answer i {
   color: #BF99D7;
 }
 
-main .faq .content .faq-container .faq .question-content .answer{
+main .faq .content .faq-container .faq .question-content .answer {
   display: none;
   animation: fadeInDown;
   animation-duration: .5s;
 }
 
-main .faq .content .faq-container .open-answer .question-content .answer{
+main .faq .content .faq-container .open-answer .question-content .answer {
   display: block;
 }
 
-main .faq .contact-faq{
+main .faq .contact-faq {
   display: flex;
   justify-content: center;
-  margin: 2rem;
 }
 
-main .faq .contact-faq a{
-transition: all .3s ease-in-out;
+main .faq .contact-faq a {
+  transition: all .3s ease-in-out;
   background: #A21ADE;
 }
-main .faq .contact-faq a:hover{
+
+main .faq .contact-faq a:hover {
   background: transparent;
   border-color: #A21ADE;
 }
 
 @media (max-width: 925px) {
-  main .faq .content .faq-container .faq{
+  main .faq .content .faq-container .faq {
     gap: 1.5rem;
     padding: 2.5rem 1rem;
   }
 }
 
-@media (max-width: 800px){
-  main .faq .content{
+@media (max-width: 800px) {
+  main .faq .content {
     grid-template-columns: 1fr;
   }
+
   main .faq .content .faq-container {
     align-items: center;
-    border: unset!important;
+    border: unset !important;
   }
-  main .faq .content .faq-container .faq{
-    border: unset!important;
-    border-bottom: 1px solid #292929!important;
+
+  main .faq .content .faq-container .faq {
+    border: unset !important;
+    border-bottom: 1px solid #292929 !important;
     padding: 2rem 1rem !important;
     width: 100%;
     gap: 1rem;
@@ -918,16 +952,326 @@ main .faq .contact-faq a:hover{
   }
 }
 
-@media (max-width: 640px){
-  main .faq .content .faq-container .faq .num-faq span{
+@media (max-width: 640px) {
+  main .faq .content .faq-container .faq {
+    padding: 2rem .5rem !important;
+  }
+
+  main .faq .content .faq-container .faq .num-faq span {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 450px){
-  main .faq .content .faq-container .faq .question-content .question-box h4{
+
+@media (max-width: 450px) {
+  main .faq .content .faq-container .faq .question-content .question-box .faq-title span {
     font-size: 1.3rem;
-  } 
+  }
 }
+
+
+main .start_project .heading {
+  background: url("../assets/images/home-page/bg-contact.webp") no-repeat center center/cover;
+}
+
+main .start_project .heading .logo-box .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 2rem 0;
+}
+
+main .start_project .heading .logo-box .logo i {
+  font-size: 2rem;
+}
+
+main .start_project .heading .logo-box .logo span {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+main .start_project .heading .cta-start-project {
+  margin-top: 2rem;
+}
+
+main .start_project .heading .cta-start-project a {
+  background: #A21ADE;
+  transition: all .3s ease-in-out;
+}
+
+main .start_project .heading .cta-start-project a:hover {
+  background: transparent;
+  border-color: #A21ADE;
+}
+
+main .start_project .content {
+  padding: 0 2rem;
+  border-top: 1px #262626 solid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+main .start_project .content form {
+  width: 70%;
+  padding: 80px 2rem;
+  border: 1px #262626 solid;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  display: flex;
+}
+
+main .start_project .content form .name_email-box {
+
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  display: inline-flex;
+}
+
+main .start_project .content form .name_email-box .name-input,
+main .start_project .content form .name_email-box .email-input,
+main .start_project .content form .why_contacting_us,
+main .start_project .content form .ur_budget,
+main .start_project .content form .message {
+  flex: 1;
+  padding: 1.2rem 1rem;
+  background: rgba(36, 36, 36, 0.50);
+  border-radius: 8px;
+  border: 1px #262626 solid;
+}
+
+main .start_project .content form .name_email-box .name-input,
+main .start_project .content form .name_email-box .email-input {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  display: inline-flex;
+}
+
+form label {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 33px;
+  word-wrap: break-word;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  color: #fff;
+  font-size: 22px;
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-bottom: 1px solid #292929;
+  padding: .8rem .3rem;
+  resize: vertical;
+}
+
+form .title:not(label.title) {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #656567;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  word-wrap: break-word;
+}
+
+form .why_contacting_us .why .devs,
+form .why_contacting_us .why .colab_or_other {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form .why_contacting_us .dev_web-input,
+form .why_contacting_us .dev_mob_and_desk,
+form .why_contacting_us .colab,
+form .why_contacting_us .other {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+form .why_contacting_us .why,
+form .ur_budget .min_max {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Style général des checkbox */
+input[type="checkbox"] {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  padding: 4px;
+  background: #262626;
+  border-radius: 4px;
+  border: 1px #333333 solid;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "\EB7B";
+  /* Code Unicode de l'icône check-line de remixicon */
+  font-family: "RemixIcon";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #B97AE0;
+}
+
+form .submit {
+  width: 100%;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form input[type="submit"] {
+  width: 50%;
+  transition: all .3s ease-in-out;
+  background: #A21ADE;
+}
+
+form input[type="submit"]:hover {
+  background: unset;
+  border-color: #A21ADE;
+}
+
+form input[type="submit"]:disabled {
+  background: rgba(126, 26, 222, .3);
+  cursor: not-allowed;
+}
+
+form input[type="submit"]:disabled:hover {
+  border-color: rgba(126, 26, 222, .3) !important;
+  border: 1px solid rgba(126, 26, 222, .3) !important;
+}
+
+main .start_project .content .form-send {
+  text-align: center;
+  padding: 3.5rem 2rem;
+}
+
+main .start_project .content .form-send .true,
+main .start_project .content .form-send .false {
+  padding: 2rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  display: none;
+}
+
+main .start_project .content .form-send .true {
+  background: #198754;
+}
+
+main .start_project .content .form-send .false {
+  background: #02CAF0;
+}
+
+main .start_project .content .form-send .true p {
+  color: #fff;
+}
+
+main .start_project .content .form-send .false p {
+  color: #000;
+}
+
+main .start_project .content .form-send .true i {
+  font-size: 2rem;
+  color: #ffc107;
+}
+
+main .start_project .content .form-send .false i {
+  font-size: 2rem;
+  color: #dc3545;
+}
+
+@media (max-width: 1110px) {
+  main .start_project .content form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 920px) {
+  main .start_project .content form {
+    width: 90%;
+    padding: 3rem 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  main .start_project .content form {
+    width: 100%;
+    border: unset !important;
+  }
+
+  main .start_project .content form .name_email-box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  main .start_project .content form .name_email-box * {
+    width: 100%;
+  }
+
+  /* form .why_contacting_us .why .devs, */
+  form .why_contacting_us .why .colab_or_other {
+    margin-top: 1rem;
+  }
+
+  form .why_contacting_us .why,
+  form .ur_budget .min_max {
+    flex-direction: column;
+    gap: 0 !important;
+  }
+
+  form input[type="checkbox"] {
+    margin-right: 1rem;
+  }
+
+  form input[type="submit"] {
+    width: 100%;
+  }
+
+  main .start_project .content .form-send {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 700px) {
+  main .start_project .content {
+    padding: 0;
+  }
+}
+
+@media (max-width: 500px) {
+
+  form .why_contacting_us .dev_web-input,
+  form .why_contacting_us .dev_mob_and_desk,
+  form .why_contacting_us .colab,
+  form .why_contacting_us .other {
+    gap: 0.3rem;
+  }
+}
+
 
 /* ===========================@Page A Propos=========================== */
 main .about_us{
