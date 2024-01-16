@@ -1,0 +1,888 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Genius : des solutions web et mobile innovantes et performantes, adaptées à vos besoins et à votre budget"
+    />
+    <title>Home</title>
+    <!-- My CSS -->
+    <link rel="preload" href="./src/styles/reset.css" as="style" />
+    <link rel="preload" href="./src/styles/index.css" as="style" />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <!-- Remix Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="preload"
+      as="style"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Animate css -->
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Précharger l'image bg de l'hero-section -->
+    <link
+      rel="preload"
+      as="image"
+      href="./src/assets/images/home-page/bg-hero-section.svg"
+    />
+  </head>
+
+  <body>
+    <!-- Header with nav bar -->
+    <header>
+      <div class="logo-box">
+        <a href="./">
+          <i class="ri-at-line"></i>
+          <span>Genius</span>
+        </a>
+      </div>
+      <nav class="">
+        <ul>
+          <li class="a-active"><a href="./" class="active">Accueil</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./realisations.html">Nos Réalisations</a></li>
+          <li><a href="./about.html">A Propos</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cta-contact_us">
+        <a href="./contact.html" class="btn">Nous Contacter</a>
+      </div>
+      <div class="menu-icon-box">
+        <i class="ri-menu-4-line menu-icon open-menu"></i>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <h1 class="hero-title">
+          Ici, le Génie est au Service de vos Ambitions Numériques
+        </h1>
+        <div class="for-startup_and_more">
+          <p>
+            Pour <span class="detail btn">Startups</span>,
+            <span class="detail btn">Dirigeants d'entreprise</span>,
+            <span class="detail btn">Medias & Editeurs</span> et
+            <span class="detail btn">Bien Social</span>
+          </p>
+        </div>
+        <div class="cta_hero-section">
+          <div class="realisation">
+            <a href="./realisations.html" class="btn">Nos Réalisations</a>
+          </div>
+          <div class="contact">
+            <a href="./contact.html" class="btn">Nous Contacter</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust on Us Section -->
+      <!-- <section class="trust-on-us lazy" data-bg="lazy.jpg">
+        Ils nous font confiance
+      </section> -->
+
+      <!-- Our Service Section -->
+      <section class="our-services lazy" data-bg="lazy.jpg">
+        <div class="heading">
+          <h2>Nos Services</h2>
+          <div>
+            <p>
+              Transformez votre marque avec nos solutions numériques innovantes
+              qui captivent et engagent votre public.
+            </p>
+          </div>
+        </div>
+        <div class="content">
+          <div class="service service1">
+            <div class="container-service">
+              <div class="icon-and-title">
+                <div class="service-icon">
+                  <img
+                    src="./src/assets/icons/Union.svg"
+                    alt="Icon"
+                    loading="lazy"
+                    width="40"
+                    height="40"
+                  />
+                </div>
+                <h3>Design</h3>
+              </div>
+              <div class="paragraph">
+                <p>
+                  Chez Genius, notre équipe de conception est passionnée par la
+                  création de designs époustouflants et centrés sur
+                  l'utilisateur qui captivent votre public et rehaussent votre
+                  marque. Nous pensons qu'un bon design n'est pas seulement une
+                  question d'esthétique ; il s'agit de créer des expériences
+                  utilisateur transparentes et intuitives.
+                </p>
+              </div>
+            </div>
+            <div class="button">
+              <a href="./services" class="btn see-more">En Savoir Plus</a>
+            </div>
+          </div>
+          <div class="service service2">
+            <div class="container-service">
+              <div class="icon-and-title">
+                <div class="service-icon">
+                  <img
+                    src="./src/assets/icons/Subtract.svg"
+                    alt="Icon"
+                    loading="lazy"
+                    width="40"
+                    height="40"
+                  />
+                </div>
+                <h3>Ingénierie</h3>
+              </div>
+              <div class="paragraph">
+                <p>
+                  Notre équipe d’ingénieurs allie expertise technique et passion
+                  pour l’innovation pour créer des solutions numériques robustes
+                  et évolutives. Nous exploitons les dernières technologies et
+                  les meilleures pratiques pour fournir des applications hautes
+                  performances adaptées à vos besoins spécifiques.
+                </p>
+              </div>
+            </div>
+            <div class="button">
+              <a href="./services" class="btn see-more">En Savoir Plus</a>
+            </div>
+          </div>
+          <div class="service service3">
+            <div class="container-service">
+              <div class="icon-and-title">
+                <div class="service-icon">
+                  <img
+                    src="./src/assets/icons/Vector.svg"
+                    alt="Icon"
+                    loading="lazy"
+                    width="40"
+                    height="40"
+                  />
+                </div>
+                <h3>Gestion de Projets</h3>
+              </div>
+              <div class="paragraph">
+                <p>
+                  Notre équipe de gestion de projet expérimentée veille à ce que
+                  vos projets soient livrés à temps, dans les limites du budget
+                  et selon vos spécifications. Nous suivons les méthodologies
+                  standard de l’industrie et utilisons des outils de
+                  communication et de collaboration efficaces pour vous tenir
+                  informé tout au long du processus de développement.
+                </p>
+              </div>
+            </div>
+            <div class="button">
+              <a href="./services" class="btn see-more">En Savoir Plus</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us Section -->
+      <section class="why-us lazy" data-bg="lazy.jpg">
+        <div class="heading">
+          <h2>Pourquoi Choisir Genius?</h2>
+          <div>
+            <p>
+              Faites l’expérience de l’excellence dans l’artisanat numérique
+              avec notre équipe de professionnels qualifiés qui se consacrent à
+              fournir des résultats exceptionnels.
+            </p>
+          </div>
+        </div>
+        <div class="content">
+          <div class="container first">
+            <div class="container-why">
+              <div class="icon-and-title">
+                <div class="service-icon">
+                  <!-- <img src="./src/assets/icons/Medaille.svg" /> -->
+                  <i class="ri-medal-fill"></i>
+                </div>
+                <h3>Expertise</h3>
+              </div>
+              <div class="paragraph">
+                <p>
+                  Chez Genius, notre équipe de conception est passionnée par la
+                  création de designs époustouflants et centrés sur
+                  l'utilisateur qui captivent votre public et rehaussent votre
+                  marque. Nous pensons qu'un bon design n'est pas seulement une
+                  question d'esthétique ; il s'agit de créer des expériences
+                  utilisateur transparentes et intuitives.
+                </p>
+              </div>
+            </div>
+            <div class="container-why">
+              <div class="icon-and-title">
+                <div class="service-icon">
+                  <!-- <img src="./src/assets/icons/People-call.svg" /> -->
+                  <i class="ri-user-voice-fill"></i>
+                </div>
+                <h3>Approche Centrée Sur le Client</h3>
+              </div>
+              <div class="paragraph">
+                <p>
+                  Nous accordons la priorité à nos clients et à leurs besoins
+                  uniques. Nous écoutons vos idées, vos défis et vos objectifs
+                  et adaptons nos services pour répondre à vos besoins
+                  spécifiques. Votre succès est notre succès.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container second">
+            <div class="container-why">
+              <div class="icon-and-title">
+                <div class="service-icon">
+                  <!-- <img src="./src/assets/icons/Bouclier.svg" /> -->
+                  <i class="ri-shield-flash-fill"></i>
+                </div>
+                <h3>Solutions Orientées Résultats</h3>
+              </div>
+              <div class="paragraph">
+                <p>
+                  Notre objectif principal est de produire des résultats. Nous
+                  combinons créativité et expertise technique pour créer des
+                  produits numériques qui stimulent la croissance de
+                  l'entreprise, améliorent l'expérience utilisateur et offrent
+                  un avantage concurrentiel.
+                </p>
+              </div>
+            </div>
+            <div class="container-why">
+              <div class="icon-and-title">
+                <div class="service-icon">
+                  <!-- <img src="./src/assets/icons/Couronne.svg" /> -->
+                  <i class="ri-vip-crown-fill"></i>
+                </div>
+                <h3>Partenariat Collaboratif</h3>
+              </div>
+              <div class="paragraph">
+                <p>
+                  Nous valorisons les relations à long terme avec nos clients.
+                  Nous nous considérons comme votre partenaire numérique,
+                  fournissant une assistance, une maintenance et des mises à
+                  jour continues pour garantir que vos produits numériques
+                  continuent de prospérer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonies Section -->
+      <section class="testimonies lazy" data-bg="lazy.jpg">
+        <div class="heading">
+          <h2>Ce Que Disent Nos Clients</h2>
+          <div>
+            <p>
+              Chez Genius, nous sommes fiers de fournir des produits et services
+              numériques exceptionnels qui contribuent au succès de nos clients.
+              Voici ce que certains de nos clients satisfaits disent de leur
+              expérience de travail avec nous
+            </p>
+          </div>
+        </div>
+        <div class="content">
+          <div class="container first">
+            <div class="container-testimonies">
+              <h3>
+                Genius a joué un rôle déterminant dans la transformation de
+                notre présence en ligne.
+              </h3>
+              <div class="paragraph">
+                <p>
+                  Chez Genius, notre équipe de conception est passionnée par la
+                  création de designs époustouflants et centrés sur
+                  l'utilisateur qui captivent votre public et rehaussent votre
+                  marque. Nous pensons qu'un bon design n'est pas seulement une
+                  question d'esthétique ; il s'agit de créer des expériences
+                  utilisateur transparentes et intuitives.
+                </p>
+              </div>
+              <div class="container-info-client">
+                <div class="image-client">
+                  <img
+                    src="./src/assets/images/home-page/testifier-2.jpeg"
+                    alt="image du client qui témoigne"
+                    loading="lazy"
+                    width="80%"
+                    height="80%"
+                  />
+                </div>
+                <div class="identite-client">
+                  <div class="name">
+                    <span>Joe Itax</span>
+                  </div>
+                  <div class="post">
+                    <span>CEO of Itax Corporation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-testimonies">
+              <h3>Travailler avec Genius a été un jeu d'enfant.</h3>
+              <div class="paragraph">
+                <p>
+                  Chez Genius, notre équipe de conception est passionnée par la
+                  création de designs époustouflants et centrés sur
+                  l'utilisateur qui captivent votre public et rehaussent votre
+                  marque. Nous pensons qu'un bon design n'est pas seulement une
+                  question d'esthétique ; il s'agit de créer des expériences
+                  utilisateur transparentes et intuitives.
+                </p>
+              </div>
+              <div class="container-info-client">
+                <div class="image-client">
+                  <img
+                    src="./src/assets/images/home-page/testifier-1.png"
+                    alt="image du client qui témoigne"
+                    loading="lazy"
+                    width="80%"
+                    height="80%"
+                  />
+                </div>
+                <div class="identite-client">
+                  <div class="name">
+                    <span>John Smith</span>
+                  </div>
+                  <div class="post">
+                    <span>CEO of Chic Boutique</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container second">
+            <div class="container-testimonies">
+              <h3>
+                Genius a joué un rôle déterminant dans la transformation de
+                notre présence en ligne.
+              </h3>
+              <div class="paragraph">
+                <p>
+                  Chez Genius, notre équipe de conception est passionnée par la
+                  création de designs époustouflants et centrés sur
+                  l'utilisateur qui captivent votre public et rehaussent votre
+                  marque. Nous pensons qu'un bon design n'est pas seulement une
+                  question d'esthétique ; il s'agit de créer des expériences
+                  utilisateur transparentes et intuitives.
+                </p>
+              </div>
+              <div class="container-info-client">
+                <div class="image-client">
+                  <img
+                    src="./src/assets/images/home-page/testifier-1.png"
+                    alt="image du client qui témoigne"
+                    loading="lazy"
+                    width="80%"
+                    height="80%"
+                  />
+                </div>
+                <div class="identite-client">
+                  <div class="name">
+                    <span>John Smith</span>
+                  </div>
+                  <div class="post">
+                    <span>CEO of Chic Boutique</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-testimonies">
+              <h3>Travailler avec Genius a été un jeu d'enfant.</h3>
+              <div class="paragraph">
+                <p>
+                  Chez Genius, notre équipe de conception est passionnée par la
+                  création de designs époustouflants et centrés sur
+                  l'utilisateur qui captivent votre public et rehaussent votre
+                  marque. Nous pensons qu'un bon design n'est pas seulement une
+                  question d'esthétique ; il s'agit de créer des expériences
+                  utilisateur transparentes et intuitives.
+                </p>
+              </div>
+              <div class="container-info-client">
+                <div class="image-client">
+                  <img
+                    src="./src/assets/images/home-page/testifier-1.png"
+                    alt="image du client qui témoigne"
+                    loading="lazy"
+                    width="80%"
+                    height="80%"
+                  />
+                </div>
+                <div class="identite-client">
+                  <div class="name">
+                    <span>John Smith</span>
+                  </div>
+                  <div class="post">
+                    <span>CEO of Chic Boutique</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQs Section -->
+      <section class="faq lazy" data-bg="lazy.jpg">
+        <div class="heading">
+          <h2>Foires Aux Questions</h2>
+          <div>
+            <p>Vous avez quelques questions supplémentaires ?</p>
+          </div>
+        </div>
+        <div class="content">
+          <div class="faq-container">
+            <div class="faq faq-one">
+              <div class="num-faq">
+                <span>01</span>
+              </div>
+              <div class="question-content">
+                <div class="question-box">
+                  <div class="faq-title">
+                    <span>Quels sont les avantages de Genius ?</span>
+                  </div>
+                  <div class="icon-open-answer">
+                    <i class="ri-add-fill"></i>
+                  </div>
+                </div>
+                <div class="answer">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec sed libero eget turpis accumsan facilisis. Vestibulum
+                    ante ipsum primis in faucibus orci luctus et ultrices
+                    posuere cubilia Curae; Vestibulum ante ipsum primis in
+                    faucibus orci luctus et ultrices posuere ; Vesti
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq faq-two">
+              <div class="num-faq">
+                <span>02</span>
+              </div>
+              <div class="question-content">
+                <div class="question-box">
+                  <div class="faq-title">
+                    <span>Quels sont les avantages de Genius ?</span>
+                  </div>
+                  <div class="icon-open-answer">
+                    <i class="ri-add-fill"></i>
+                  </div>
+                </div>
+                <div class="answer">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec sed libero eget turpis accumsan facilisis. Vestibulum
+                    ante ipsum primis in faucibus orci luctus et ultrices
+                    posuere cubilia Curae; Vestibulum ante ipsum primis in
+                    faucibus orci luctus et ultrices posuere ; Vesti
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq faq-three">
+              <div class="num-faq">
+                <span>03</span>
+              </div>
+              <div class="question-content">
+                <div class="question-box">
+                  <div class="faq-title">
+                    <span>Quels sont les avantages de Genius ?</span>
+                  </div>
+                  <div class="icon-open-answer">
+                    <i class="ri-add-fill"></i>
+                  </div>
+                </div>
+                <div class="answer">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec sed libero eget turpis accumsan facilisis. Vestibulum
+                    ante ipsum primis in faucibus orci luctus et ultrices
+                    posuere cubilia Curae; Vestibulum ante ipsum primis in
+                    faucibus orci luctus et ultrices posuere ; Vesti
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq faq-for">
+              <div class="num-faq">
+                <span>04</span>
+              </div>
+              <div class="question-content">
+                <div class="question-box">
+                  <div class="faq-title">
+                    <span>Quels sont les avantages de Genius ?</span>
+                  </div>
+                  <div class="icon-open-answer">
+                    <i class="ri-add-fill"></i>
+                  </div>
+                </div>
+                <div class="answer">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec sed libero eget turpis accumsan facilisis. Vestibulum
+                    ante ipsum primis in faucibus orci luctus et ultrices
+                    posuere cubilia Curae; Vestibulum ante ipsum primis in
+                    faucibus orci luctus et ultrices posuere ; Vesti
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq-container">
+            <div class="faq faq-five">
+              <div class="num-faq">
+                <span>05</span>
+              </div>
+              <div class="question-content">
+                <div class="question-box">
+                  <div class="faq-title">
+                    <span>Quels sont les avantages de Genius ?</span>
+                  </div>
+                  <div class="icon-open-answer">
+                    <i class="ri-add-fill"></i>
+                  </div>
+                </div>
+                <div class="answer">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec sed libero eget turpis accumsan facilisis. Vestibulum
+                    ante ipsum primis in faucibus orci luctus et ultrices
+                    posuere cubilia Curae; Vestibulum ante ipsum primis in
+                    faucibus orci luctus et ultrices posuere ; Vesti
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq faq-six">
+              <div class="num-faq">
+                <span>06</span>
+              </div>
+              <div class="question-content">
+                <div class="question-box">
+                  <div class="faq-title">
+                    <span>Quels sont les avantages de Genius ?</span>
+                  </div>
+                  <div class="icon-open-answer">
+                    <i class="ri-add-fill"></i>
+                  </div>
+                </div>
+                <div class="answer">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec sed libero eget turpis accumsan facilisis. Vestibulum
+                    ante ipsum primis in faucibus orci luctus et ultrices
+                    posuere cubilia Curae; Vestibulum ante ipsum primis in
+                    faucibus orci luctus et ultrices posuere ; Vesti
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq faq-seven">
+              <div class="num-faq">
+                <span>07</span>
+              </div>
+              <div class="question-content">
+                <div class="question-box">
+                  <div class="faq-title">
+                    <span>Quels sont les avantages de Genius ?</span>
+                  </div>
+                  <div class="icon-open-answer">
+                    <i class="ri-add-fill"></i>
+                  </div>
+                </div>
+                <div class="answer">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec sed libero eget turpis accumsan facilisis. Vestibulum
+                    ante ipsum primis in faucibus orci luctus et ultrices
+                    posuere cubilia Curae; Vestibulum ante ipsum primis in
+                    faucibus orci luctus et ultrices posuere ; Vesti
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq faq-height">
+              <div class="num-faq">
+                <span>08</span>
+              </div>
+              <div class="question-content">
+                <div class="question-box">
+                  <div class="faq-title">
+                    <span>Quels sont les avantages de Genius ?</span>
+                  </div>
+                  <div class="icon-open-answer">
+                    <i class="ri-add-fill"></i>
+                  </div>
+                </div>
+                <div class="answer">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec sed libero eget turpis accumsan facilisis. Vestibulum
+                    ante ipsum primis in faucibus orci luctus et ultrices
+                    posuere cubilia Curae; Vestibulum ante ipsum primis in
+                    faucibus orci luctus et ultrices posuere ; Vesti
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-faq">
+          <a href="mailto:interne.genius@gmail.com" class="btn" target="_blank"
+            >Encore des Questions ?</a
+          >
+        </div>
+      </section>
+
+      <!-- Start A Project Section -->
+      <section class="start_project lazy" data-bg="lazy.jpg">
+        <div class="heading">
+          <div class="logo-box">
+            <span class="logo">
+              <i class="ri-at-line"></i>
+              <span>Genius</span>
+            </span>
+          </div>
+          <h2>Merci de Votre Intérêt pour Genius</h2>
+          <div>
+            <p>
+              Nous serons ravis d’avoir de vos nouvelles et de discuter de la
+              manière dont nous pouvons vous aider à donner vie à vos idées
+              numériques.
+            </p>
+          </div>
+          <div class="cta-start-project">
+            <a href="#start-project" class="btn">Start Project</a>
+          </div>
+        </div>
+        <div class="content" id="start-project">
+          <form class="form" id="contact_form" method="post">
+            <div class="name_email-box">
+              <div class="name-input">
+                <label for="fullName" class="title">Nom Complet *</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="fullName"
+                  placeholder="Saisissez ici"
+                  required
+                />
+              </div>
+              <div class="email-input">
+                <label for="email" class="title">Email *</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Saisissez ici"
+                  required
+                />
+              </div>
+            </div>
+            <div class="why_contacting_us">
+              <span class="title">Pourquoi vous nous contacter ?</span>
+              <div class="why">
+                <div class="devs">
+                  <div class="dev_web-input">
+                    <input
+                      type="checkbox"
+                      name="dev_web"
+                      id="dev_web"
+                      value="dev_web"
+                      checked
+                    />
+                    <label for="dev_web">Développement Web</label>
+                  </div>
+                  <div class="dev_mob_and_desk">
+                    <input
+                      type="checkbox"
+                      name="dev_mob_and_desk"
+                      id="dev_mob_and_desk"
+                      value="dev_mob_and_desk"
+                    />
+                    <label for="dev_mob_and_desk"
+                      >Développement App Mobile ou Desktop</label
+                    >
+                  </div>
+                </div>
+                <div class="colab_or_other">
+                  <div class="colab">
+                    <input
+                      type="checkbox"
+                      name="colab"
+                      id="colab"
+                      value="colab"
+                    />
+                    <label for="colab">Collaboration</label>
+                  </div>
+                  <div class="other">
+                    <input
+                      type="checkbox"
+                      name="other"
+                      id="other"
+                      value="other"
+                    />
+                    <label for="other">Autres</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ur_budget">
+              <div class="head">
+                <span class="title">Votre fourchette budgétaire</span>
+              </div>
+              <div class="min_max">
+                <div class="min-value">
+                  <label for="minValue" class="title">Min</label>
+                  <input
+                    type="text"
+                    name="minValue"
+                    id="minValue"
+                    placeholder="Saisissez ici"
+                  />
+                </div>
+                <div class="max-value">
+                  <label for="maxValue" class="title">Max</label>
+                  <input
+                    type="text"
+                    name="maxValue"
+                    id="maxValue"
+                    placeholder="Saisissez ici"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="message">
+              <span class="title">Votre Message *</span>
+              <textarea
+                name="message"
+                placeholder="Saisissez ici"
+                required
+              ></textarea>
+            </div>
+            <div class="submit">
+              <input type="submit" value="Envoyer" class="btn" id="btnSubmit" />
+            </div>
+          </form>
+
+          <div class="form-send">
+            <div class="true">
+              <p>
+                Merci de nous avoir contacté ! <br />
+                Nous vous répondrons dans les plus brefs délais.
+              </p>
+              <i class="ri-emotion-happy-fill"></i>
+            </div>
+            <div class="false">
+              <p>
+                Une erreur s'est produite lors de l'envoi de votre formulaire,
+                veuillez ressayer s'il vous plaît.
+              </p>
+              <i class="ri-emotion-unhappy-fill"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer_first_part">
+        <div class="logo-box">
+          <span class="logo">
+            <i class="ri-at-line"></i>
+            <span>Genius</span>
+          </span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./">Accueil</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./realisations.html">Nos Réalisations</a></li>
+            <li><a href="./about.html">A Propos</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+          <div class="social_media">
+            <div>
+              <span>Restez Connecté</span>
+            </div>
+            <div class="social_links_icons">
+              <a href="https://facebook.com/joseph-itakala.102" target="_blank">
+                <i class="ri-facebook-circle-fill"></i>
+              </a>
+              <a href="https://twitter.com/Joseph_Itakala" target="_blank">
+                <i class="ri-twitter-x-fill"></i>
+              </a>
+              <a
+                href="https://linkedin.com/in/joseph-itakala-2a6465250"
+                target="_blank"
+              >
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer_second_part">
+        <div class="info_about_us-box">
+          <a
+            href="mailto:interne.genius@gmail.com"
+            target="_blank"
+            class="info_about_us-email"
+          >
+            <i class="ri-mail-fill"></i>
+            <span>interne.genius@gmail.com</span>
+          </a>
+          <a
+            href="https://wa.me/243977873421"
+            target="_blank"
+            class="info_about_us-wa_me"
+          >
+            <i class="ri-whatsapp-fill"></i>
+            <span>+243 977 873 421</span>
+          </a>
+          <div class="info_about_us-adresse">
+            <i class="ri-map-pin-fill"></i>
+            <span>Kinshasa-RDC</span>
+          </div>
+        </div>
+        <div class="copyright-box">
+          <span>&copy; 2023 Genius. Tous droits réservés.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/js/index.js" defer></script>
+    <!-- Lazy Load -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.5/dist/lazyload.min.js"></script>
+    <!-- Ajouter le script EmailJS -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  </body>
+</html>
